@@ -1,0 +1,1883 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>HapaiAuto</title>
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="main-header-wrapper">
+                <nav class="header-left-menu">
+                    <ul>
+                        <li>
+                            <a href="#">Купити авто</a>
+                        </li>
+                        <li>
+                            <a href="#">Продати авто</a>
+                        </li>
+                        <li>
+                            <a href="#">Trade-In</a>
+                        </li>
+                        <li>
+                            <a href="#">Реалізація авто</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#">
+                    <img src="./img/header-logo.svg" alt="HapaiAuto">
+                </a>
+                <nav>
+                    <ul class="header-right-menu">
+                        <li>
+                            <a href="#">Фінансування</a>
+                        </li>
+                        <li>
+                            <a href="#">Про нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакти</a>
+                        </li>
+                    </ul>
+                    <button class="callback-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="none">
+                            <circle cx="19" cy="19" r="19" fill="#FF4800" />
+                            <g clip-path="url(#a)">
+                                <path fill="#fff"
+                                    d="m25.572 22.355-2.284-1.371a1.47 1.47 0 0 0-1.225-.134c-.798.22-1.005 1.136-1.282 1.799a6.056 6.056 0 0 1-5.43-5.43c.666-.279 1.577-.484 1.798-1.283a1.47 1.47 0 0 0-.134-1.225l-1.37-2.284c-.536-.951-2.01-1.013-2.619-.104-4.062 5.946 1.524 14.245 8.408 14.01 1.439.048 4.93-.848 4.899-2.635 0-.547-.292-1.062-.761-1.343" />
+                            </g>
+                            <defs>
+                                <clipPath id="a">
+                                    <path fill="#fff" d="M11 11h16v16H11z" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </nav>
+                <div class="header-mob-block">
+                    <button class="callback-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
+                            <path fill="#fff"
+                                d="m20.88 16.018-3.427-2.056a2.2 2.2 0 0 0-1.837-.201c-1.197.33-1.508 1.704-1.923 2.698a9.08 9.08 0 0 1-8.145-8.145c1-.417 2.366-.725 2.698-1.923a2.21 2.21 0 0 0-.202-1.837L5.988 1.127C5.185-.3 2.975-.393 2.061.971c-6.093 8.92 2.285 21.368 12.611 21.015 2.159.072 7.396-1.273 7.349-3.952 0-.82-.438-1.593-1.141-2.016" />
+                        </svg>
+                    </button>
+                    <div class="tel-menu-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="none">
+                            <circle cx="23" cy="23" r="23" fill="#fff" />
+                            <path stroke="#FF4800" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 23h18M14 17h18M14 29h18" /></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hapaiavto-single-product-sect">
+        <div class="container">
+            <div class="hapaiavto-breadcrumbs">
+                <a href="#">Головна</a> <span class="sep">/</span> <a href="#">Каталог авто</a> <span
+                    class="sep">/</span> <span class="current">Toyota RAV4 2025</span>
+            </div>
+
+            <div class="hapaiavto-single-top-bar">
+                <div class="hapaiavto-single-tabs">
+                    <a href="#" class="active">Фото</a>
+                    <a href="#">Опис</a>
+                    <a href="#">Відео</a>
+                </div>
+                <div class="hapaiavto-single-top-right">
+                    <a href="tel:0638204050" class="hapaiavto-single-phone">063 820 40 50 <span>(Роман)</span></a>
+                    <div class="hapaiavto-red-btn leave-request-btn">
+                        <a href="#">Купити</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hapaiavto-single-content">
+                <div class="hapaiavto-single-gallery-wrapper">
+                    <div class="hapaiavto-single-gallery">
+                        <div class="swiper hapaiavto-main-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./img/single-product-img.webp" alt="HapaiAuto">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/single-product-img.webp" alt="HapaiAuto">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/single-product-img.webp" alt="HapaiAuto">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/single-product-img.webp" alt="HapaiAuto">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/single-product-img.webp" alt="HapaiAuto">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="#FF4800" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                            <div class="swiper-button-prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="#FF4800" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                                </svg>
+                            </div>
+                            <div class="hapaiavto-gallery-counter">1 з 21</div>
+                            <div class="hapaiavto-gallery-video-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none">
+                                    <circle cx="25" cy="25" r="25" fill="#fff" opacity=".6" />
+                                    <circle cx="25" cy="25" r="19.531" fill="#fff" />
+                                    <path fill="#FF4800"
+                                        d="M20.313 18.75v12.5a.782.782 0 0 0 1.19.666l10.156-6.25a.78.78 0 0 0 0-1.331l-10.156-6.25a.782.782 0 0 0-1.19.665" />
+                                </svg>
+                                <span>Відео</span>
+                            </div>
+                        </div>
+
+                        <div class="swiper hapaiavto-thumbs-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./img/single-product-img.webp" alt="HapaiAuto">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/single-product-img.webp" alt="HapaiAuto">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/single-product-img.webp" alt="HapaiAuto">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/single-product-img.webp" alt="HapaiAuto">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/single-product-img.webp" alt="HapaiAuto">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hapaiavto-single-info hapaiavto-single-info-mob">
+                        <h1 class="hapaiavto-single-title">Toyota RAV 4</h1>
+                        <div class="hapaiavto-single-price-wrap">
+                            <div class="hapaiavto-single-price">$42 000</div>
+                        </div>
+
+                        <ul class="hapaiavto-single-specs">
+                            <li><span class="spec-label">Рік випуску:</span> <span class="spec-val">2025</span></li>
+                            <li><span class="spec-label">Пробіг:</span> <span class="spec-val">42 тис. км.</span></li>
+                            <li><span class="spec-label">Двигун:</span> <span class="spec-val">Бензин 2 л.</span></li>
+                            <li><span class="spec-label">Коробка передач:</span> <span class="spec-val">Автомат</span>
+                            </li>
+                            <li><span class="spec-label">Привід:</span> <span class="spec-val">Повний</span></li>
+                            <li><span class="spec-label">VIN:</span> <span class="spec-val">1HGBH41JXMN109186</span>
+                            </li>
+                            <li><span class="spec-label">Адреса:</span> <span class="spec-val">Кільцева дорога 22,
+                                    м.Київ</span></li>
+                        </ul>
+                        <div class="hapaiavto-red-btn leave-request-btn">
+                            <button>Залишити заявку</button>
+                        </div>
+                    </div>
+
+                    <div class="hapaiavto-estimated-payment">
+                        <div class="hapaiavto-estimated-payment-title">Орієнтовний платіж</div>
+
+                        <div class="hapaiavto-estimated-payment-inner hapaiavto-ep-collapsed">
+                            <div class="hapaiavto-estimated-payment-price-row">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='27' fill='none'%3E%3Cpath fill='url(%23a)' fill-rule='evenodd' d='M.084 19.14q.282.255.592.497c2.263 1.763 5.876 3.03 9.99 3.03 4.115 0 7.729-1.267 9.991-3.03q.31-.241.592-.497.084.425.084.86c0 1.556-.818 3.033-2.316 4.2-1.886 1.47-4.918 2.467-8.35 2.467S4.203 25.67 2.316 24.2C.819 23.033 0 21.556 0 20q0-.434.084-.86m.036-6.635q.266.239.556.466C2.939 14.733 6.552 16 10.666 16h.049c4.094-.01 7.689-1.273 9.942-3.03q.31-.24.592-.497l.006.027q.078.413.078.833c0 1.556-.818 3.034-2.316 4.2-1.87 1.46-4.872 2.451-8.27 2.467h-.08c-3.432 0-6.464-.996-8.351-2.467C.819 16.367 0 14.89 0 13.333q0-.434.084-.86zM10.747 0c3.398.016 6.4 1.007 8.27 2.467 1.498 1.166 2.316 2.644 2.316 4.2s-.818 3.033-2.316 4.2c-1.87 1.46-4.872 2.45-8.27 2.466h-.08c-3.432 0-6.464-.996-8.351-2.466C.819 9.7 0 8.223 0 6.667s.819-3.034 2.316-4.2C4.203.996 7.235 0 10.666 0z' clip-rule='evenodd'/%3E%3Cdefs%3E%3ClinearGradient id='a' x1='10.667' x2='10.667' y1='0' y2='26.667' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF4800'/%3E%3Cstop offset='1' stop-color='%23992B00'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E"
+                                    alt="HapaiAuto">
+                                <div class="hapaiavto-estimated-payment-price-uah">35 220 грн/міс.</div>
+                            </div>
+                            <div class="hapaiavto-estimated-payment-price-usd">820$</div>
+                            <div class="hapaiavto-red-btn">
+                                <button class="hapaiavto-ep-calculate-btn">Розрахувати</button>
+                            </div>
+                        </div>
+
+                        <div class="hapaiavto-ep-calculator">
+                            <div class="hapaiavto-ep-calc-left">
+                                <div class="hapaiavto-ep-field">
+                                    <label>Перший внесок</label>
+                                    <div class="hapaiavto-ep-input-wrap">
+                                        <input type="number" id="ep-deposit" value="7000" min="0">
+                                        <span class="hapaiavto-ep-currency"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" fill="none">
+                                                <path stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    d="M12 1v22M17 5H9.5a3.5 3.5 0 1 0 0 7h5a3.5 3.5 0 1 1 0 7H6" />
+                                            </svg></span>
+                                    </div>
+                                </div>
+                                <div class="hapaiavto-ep-field">
+                                    <div class="hapaiavto-ep-months-header">
+                                        <label>Кількість місяців</label>
+                                        <span class="hapaiavto-ep-months-val" id="ep-months-val">48</span>
+                                    </div>
+                                    <input type="range" id="ep-months" min="12" max="84" step="12" value="48"
+                                        class="hapaiavto-ep-slider">
+                                </div>
+                            </div>
+                            <div class="hapaiavto-ep-calc-right">
+                                <div class="hapaiavto-ep-result-label">Щомісячний платіж</div>
+                                <div class="hapaiavto-ep-result-uah" id="ep-result-uah">18 500 грн/міс.</div>
+                                <div class="hapaiavto-ep-result-usd" id="ep-result-usd">490$</div>
+                                <div class="hapaiavto-red-btn consultation-btn">
+                                    <button class="hapaiavto-ep-submit-btn">Надіслати заявку</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seo-text-section ark-content-block">
+                        <h2>Опис авто</h2>
+                        <p>До вашої уваги — Volkswagen Tiguan 2013 року, офіційний автомобіль з унікальним пробігом лише
+                            30 000 км! Ідеальний варіант для тих, хто шукає надійний, економний і доглянутий кросовер.
+                        </p>
+                        <p>Основні характеристики та комплектація:</p>
+                        <ul>
+                            <li>Офіційний автомобіль</li>
+                            <li>Механічна 6-ступінчаста коробка передач</li>
+                            <li>Двигун 1.4 TSI (бензин, турбо)</li>
+                            <li>Повний електропакет</li>
+                        </ul>
+                        <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є,
+                            фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку
+                            та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть,
+                            але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона
+                            популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset,
+                            які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп'ютерного
+                            верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.</p>
+                    </div>
+                    <div class="seo-readmore">
+                        <span>Читати більше</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" fill="none">
+                            <path stroke="#FF4800" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6 6-6" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="hapaiavto-single-info">
+                    <h1 class="hapaiavto-single-title">Toyota RAV 4</h1>
+                    <div class="hapaiavto-single-price-wrap">
+                        <div class="hapaiavto-single-price">$42 000</div>
+                    </div>
+
+                    <ul class="hapaiavto-single-specs">
+                        <li><span class="spec-label">Рік випуску:</span> <span class="spec-val">2025</span></li>
+                        <li><span class="spec-label">Пробіг:</span> <span class="spec-val">42 тис. км.</span></li>
+                        <li><span class="spec-label">Двигун:</span> <span class="spec-val">Бензин 2 л.</span></li>
+                        <li><span class="spec-label">Коробка передач:</span> <span class="spec-val">Автомат</span></li>
+                        <li><span class="spec-label">Привід:</span> <span class="spec-val">Повний</span></li>
+                        <li><span class="spec-label">VIN:</span> <span class="spec-val">1HGBH41JXMN109186</span></li>
+                        <li><span class="spec-label">Адреса:</span> <span class="spec-val">Кільцева дорога 22,
+                                м.Київ</span></li>
+                    </ul>
+                    <div class="hapaiavto-red-btn leave-request-btn">
+                        <button>Залишити заявку</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hapaiavto-overview-sect">
+        <div class="container">
+            <div class="hapaiavto-overview">
+                <h2>Хапай огляд</h2>
+                <p class="hapaiavto-overview-desc">Перевіряємо кожне авто перед продажем,<br>щоб ви могли обрати
+                    впевнено</p>
+                <div class="hapaiavto-overview-img">
+                    <img class="hapaiavto-overview-img-car" src="./img/auto.webp" alt="HapaiAuto">
+                    <img class="hapaiavto-overview-img-circle"
+                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='990' height='161' fill='none'%3E%3Cpath stroke='%23fff' stroke-width='1.833' d='M495 .917c136.657 0 260.356 8.976 349.871 23.48 44.765 7.254 80.939 15.884 105.901 25.447 12.486 4.783 22.113 9.78 28.602 14.918 6.503 5.15 9.709 10.32 9.709 15.446s-3.205 10.296-9.709 15.446c-6.489 5.139-16.116 10.136-28.602 14.919-24.962 9.563-61.136 18.193-105.901 25.447C755.356 150.524 631.657 159.5 495 159.5s-260.356-8.976-349.871-23.48c-44.765-7.254-80.94-15.884-105.901-25.447-12.486-4.783-22.113-9.78-28.602-14.919C4.122 90.504.917 85.334.917 80.208s3.206-10.296 9.709-15.446c6.489-5.139 16.116-10.135 28.602-14.918C64.19 40.28 100.364 31.65 145.129 24.398 234.644 9.893 358.343.916 495 .916Z' /%3E%3C/svg%3E"
+                        alt="HapaiAuto">
+                    <img class="hapaiavto-overview-img-360"
+                        src="data:image/webp;base64,UklGRkgDAABXRUJQVlA4WAoAAAAQAAAAWwAAJwAAQUxQSMcAAAABcFXbVtxcCU8CUnCSOggOigNwkDigDiIBCU/Ck5B5vqvfETEBOOnboja+1GqJHtfL18bXa+eukTSS7NwFrY00tTmVRqrpmAwj2SpH6kh3OJBGwmnnM1IOG045maz6kXQC4EbaAvS8IqC8DH4k7iOzUJj9KjM1Zjb+7cbMlFktzH6BWfTMPIyXApFXBwgvByCz6gBAjJO6FQKnBtuZUcb+wKfioFQ2gxwBMpeMsx/lYQHnXc8iCy51vb7PouB6H0u1t5iW1uMkAFZQOCBaAgAAMA8AnQEqXAAoAD6dSJxLtjQskrquZFgJxLSAC2sLcHvn4zZP98JoAH583gjhn8l/2XeBYAPMg1R3+m+pn/AeKn519gP+T/0T/f+tH62f2IN18yntnUORSZnXII9O0sxBqa/42E0ep4WVhgJwaf1htP962gtVy1HSJ5Ogh4ogRqvDAAD++yLZ/OVWWAEnAmeolWxntUoPXQJQzgBpCLhAxSzwbjl0l0IqC3G5La8GBYrY83UY79l65YFBOXdr55L/LXfcKfm6QO8sw+C3MLL4UNGnAeV5IzaFo8xK22wcpv1n7AGB3s18SNjI04J1QXiZkkf/dXG3/I+NG4gpsrdPQPIRV0Vmw68XHPGXdv+Yi9IYdN3P79Epn+qsG9uef4TnOPkaHrWtMQUNbr+feFeg3vItjr5PdUV14Wf2eO5RbJ+brZb6hcmvfGh/5b06qEWUqe4e1Nf+JaY8uuc1ZTL3ryF4B8dNcoa5xEOcThp1g5ZwxrQEyYEJbEHw1f0X/9Bw91l+As8ktovvjyuy3yY2Vc5ZT+AKx771TVx+MCs9uo8mWZPF9m2G6KzePcdF0HWpJrkLn0t7D5Qk/9yMk6v+W6WZ1mXbV21S1IQLpRGi+JPt+wuTddUv+Z9u2uA9MHZhpR9p/162tafqYVXzEPENuEjL4Ji8dkYtuzy7ntS6YxHzl9zxG83qUN/3LLzgFt7intYP6XCEp1BqTdr3/aObS8qamcD/4h7rTU/ANCatVdq8unU1Qc9NcwsP8Kjsa8hF5rcJtJz/LVgW7PVJjKqzsGUHOHP//8Q6AAA="
+                        alt="HapaiAuto">
+                </div>
+                <div class="hapaiavto-overview-check">Перевіряємо</div>
+
+                <div class="hapaiavto-overview-features">
+                    <div class="hapaiavto-overview-feature">
+                        <img src="data:image/webp;base64,UklGRnIBAABXRUJQVlA4WAoAAAAQAAAAHwAAHwAAQUxQSCcBAAABkGptmyI2X5iZ3YTRRieKHDNHMSeSmZk5ZSbFzFyNU25Vt72Anl/M7szsHUTEBEDRf3fWGXZGfyD6xPQkPrsyXt9lEBF9rakZ2n8dp3JAykMKLj/VDDe5GtKYLePfzHXwKou0OYM08z0mvCUb7wiHdpwSxnUYFgNCjYZZxs0KhGa1e/B9Z1YKgBlKPATnyPwPgz8nVc4wSNZvPLbI+sp/4W8c+kh2ft1qCSmciPJQQNJD/u8sfmSAvadexP6Tegwww4yoF54FYJxkOQPQakUzDgjmJJ0KAG0S9IbdIvlcYU6GDFJsEa5KKS8Lb+y4KLA9rutbv78AoJLreJsO2WYd6ZD2N9Q4FOfV6lTSbu32lNX+Fj7n5PUdv8NUzBknuhMBO90XR6EKAFZQOCAkAAAAcAIAnQEqIAAgAD6dSp9LAoCACwE4lpAAA9o6AAD+9xwAAAAA"
+                            alt="HapaiAuto">
+                        <span>Лакофарбове</span>
+                    </div>
+                    <div class="hapaiavto-overview-feature">
+                        <img src="data:image/webp;base64,UklGRnIBAABXRUJQVlA4WAoAAAAQAAAAHwAAHwAAQUxQSCcBAAABkGptmyI2X5iZ3YTRRieKHDNHMSeSmZk5ZSbFzFyNU25Vt72Anl/M7szsHUTEBEDRf3fWGXZGfyD6xPQkPrsyXt9lEBF9rakZ2n8dp3JAykMKLj/VDDe5GtKYLePfzHXwKou0OYM08z0mvCUb7wiHdpwSxnUYFgNCjYZZxs0KhGa1e/B9Z1YKgBlKPATnyPwPgz8nVc4wSNZvPLbI+sp/4W8c+kh2ft1qCSmciPJQQNJD/u8sfmSAvadexP6Tegwww4yoF54FYJxkOQPQakUzDgjmJJ0KAG0S9IbdIvlcYU6GDFJsEa5KKS8Lb+y4KLA9rutbv78AoJLreJsO2WYd6ZD2N9Q4FOfV6lTSbu32lNX+Fj7n5PUdv8NUzBknuhMBO90XR6EKAFZQOCAkAAAAcAIAnQEqIAAgAD6dSp9LAoCACwE4lpAAA9o6AAD+9xwAAAAA"
+                            alt="HapaiAuto">
+                        <span>Історію по VIN</span>
+                    </div>
+                    <div class="hapaiavto-overview-feature">
+                        <img src="data:image/webp;base64,UklGRnIBAABXRUJQVlA4WAoAAAAQAAAAHwAAHwAAQUxQSCcBAAABkGptmyI2X5iZ3YTRRieKHDNHMSeSmZk5ZSbFzFyNU25Vt72Anl/M7szsHUTEBEDRf3fWGXZGfyD6xPQkPrsyXt9lEBF9rakZ2n8dp3JAykMKLj/VDDe5GtKYLePfzHXwKou0OYM08z0mvCUb7wiHdpwSxnUYFgNCjYZZxs0KhGa1e/B9Z1YKgBlKPATnyPwPgz8nVc4wSNZvPLbI+sp/4W8c+kh2ft1qCSmciPJQQNJD/u8sfmSAvadexP6Tegwww4yoF54FYJxkOQPQakUzDgjmJJ0KAG0S9IbdIvlcYU6GDFJsEa5KKS8Lb+y4KLA9rutbv78AoJLreJsO2WYd6ZD2N9Q4FOfV6lTSbu32lNX+Fj7n5PUdv8NUzBknuhMBO90XR6EKAFZQOCAkAAAAcAIAnQEqIAAgAD6dSp9LAoCACwE4lpAAA9o6AAD+9xwAAAAA"
+                            alt="HapaiAuto">
+                        <span>Юридичну чистоту</span>
+                    </div>
+                </div>
+
+                <div class="hapaiavto-red-btn inspection-btn">
+                    <button>Перевірити</button>
+                </div>
+
+                <div class="hapaiavto-overview-note">*Рекомендуємо також зробити технічну<br>діагностику перед купівлею
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hapaiavto-related-products-sect">
+        <div class="container">
+            <div class="hapaiavto-related-products">
+                <h2>Можуть зацікавити</h2>
+
+                <div class="hapaiavto-related-slider-wrap">
+                    <div class="swiper hapaiavto-related-swiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="hapaiavto-shop-showcase-list-item">
+                                    <div class="hapaiavto-shop-showcase-list-item-image">
+                                        <img src="data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAABQDgCdASodAb4APp1OpE4CAoALATiWlu4XaxG0AJ7APfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sAA/v9mNAAAAAAAAAAA"
+                                            alt="HapaiAuto">
+                                    </div>
+                                    <div class="hapaiavto-shop-showcase-list-item-title-price">
+                                        <div>
+                                            <p>Toyota RAV4</p>
+                                            <i>2025</i>
+                                        </div>
+                                        <div>
+                                            <span>$34 000</span>
+                                        </div>
+                                    </div>
+                                    <ul class="hapaiavto-shop-showcase-list-item-tags">
+                                        <li>
+                                            <img src="data:image/webp;base64,UklGRpIAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSFQAAAABYEhtW50PIYQQhpBBIYSQwUKYQQghhDCEH+FH6H7ZCCJiAvDPQERhQShN+dVqZvN4wCLSWpZ5nlwwyMuJ8702jFty54GxtAQAF4+Ys+/gaOiTw/dWUDggGAAAADABAJ0BKhAAEAACQDglpAADcAD+8jwAAA=="
+                                                alt="HapaiAuto">
+                                            <span>Бензин 2 л.</span>
+                                        </li>
+                                        <li>
+                                            <img src="data:image/webp;base64,UklGRp4AAABXRUJQVlA4WAoAAAAQAAAACwAADwAAQUxQSF8AAAABcBBJstWsBCScBJwEB1kHiYMg4Tl4T0IcIOUkPAmTz4GGiJgASXrM+VLt4wn3agD0av9r1ZKQUUmg/8V2gO0tEjBlQhx/7wDQuAFdhTRTOov1bOCNfsEne9IHaWhcbABWUDggGAAAADABAJ0BKgwAEAACQDglpAADcAD+8jwAAA=="
+                                                alt="HapaiAuto">
+                                            <span>Автомат</span>
+                                        </li>
+                                        <li>
+                                            <img src="data:image/webp;base64,UklGRqQAAABXRUJQVlA4WAoAAAAQAAAADwAACgAAQUxQSGYAAAABcEhtW/Y8CCGEEEIIn8FmMISFkEkI7wxCeBEehHs/zSEiJkCSrnA6bjrXADqQ7admAhPwbpLS3RzbctEdzK/ZMBScsxmwfJrlyW91H0DoAl59N3NcybEG5JpjjLk2pOqj6H+5dwFWUDggGAAAADABAJ0BKhAACwACQDglpAADcAD+8jwAAA=="
+                                                alt="HapaiAuto">
+                                            <span>40 тис. км.</span>
+                                        </li>
+                                        <li>
+                                            <img src="data:image/webp;base64,UklGRqIAAABXRUJQVlA4WAoAAAAQAAAADAAADwAAQUxQSGMAAAABcEhre948CEEISlFqsBgsBkNIDTaDD2EIRfgQnv4zRMQEAFOkOSpAGV6/gY/3jdmHWeI0XqHaUx1AqD/VGVjUSDWgrqdQXUeq9na6rSUfBLQHFfjedICyXixc1r+6cN+jcQYAVlA4IBgAAAAwAQCdASoNABAAAkA4JaQAA3AA/vI8AAA="
+                                                alt="HapaiAuto">
+                                            <span>Київ</span>
+                                        </li>
+                                    </ul>
+                                    <div class="hapaiavto-red-btn">
+                                        <a href="#">Переглянути авто</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="hapaiavto-shop-showcase-list-item">
+                                    <div class="hapaiavto-shop-showcase-list-item-image">
+                                        <img src="data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAABQDgCdASodAb4APp1OpE4CAoALATiWlu4XaxG0AJ7APfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sAA/v9mNAAAAAAAAAAA"
+                                            alt="HapaiAuto">
+                                    </div>
+                                    <div class="hapaiavto-shop-showcase-list-item-title-price">
+                                        <div>
+                                            <p>Toyota RAV4</p>
+                                            <i>2025</i>
+                                        </div>
+                                        <div>
+                                            <span>$34 000</span>
+                                        </div>
+                                    </div>
+                                    <ul class="hapaiavto-shop-showcase-list-item-tags">
+                                        <li>
+                                            <img src="data:image/webp;base64,UklGRpIAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSFQAAAABYEhtW50PIYQQhpBBIYSQwUKYQQghhDCEH+FH6H7ZCCJiAvDPQERhQShN+dVqZvN4wCLSWpZ5nlwwyMuJ8702jFty54GxtAQAF4+Ys+/gaOiTw/dWUDggGAAAADABAJ0BKhAAEAACQDglpAADcAD+8jwAAA=="
+                                                alt="HapaiAuto">
+                                            <span>Бензин 2 л.</span>
+                                        </li>
+                                        <li>
+                                            <img src="data:image/webp;base64,UklGRp4AAABXRUJQVlA4WAoAAAAQAAAACwAADwAAQUxQSF8AAAABcBBJstWsBCScBJwEB1kHiYMg4Tl4T0IcIOUkPAmTz4GGiJgASXrM+VLt4wn3agD0av9r1ZKQUUmg/8V2gO0tEjBlQhx/7wDQuAFdhTRTOov1bOCNfsEne9IHaWhcbABWUDggGAAAADABAJ0BKgwAEAACQDglpAADcAD+8jwAAA=="
+                                                alt="HapaiAuto">
+                                            <span>Автомат</span>
+                                        </li>
+                                        <li>
+                                            <img src="data:image/webp;base64,UklGRqQAAABXRUJQVlA4WAoAAAAQAAAADwAACgAAQUxQSGYAAAABcEhtW/Y8CCGEEEIIn8FmMISFkEkI7wxCeBEehHs/zSEiJkCSrnA6bjrXADqQ7admAhPwbpLS3RzbctEdzK/ZMBScsxmwfJrlyW91H0DoAl59N3NcybEG5JpjjLk2pOqj6H+5dwFWUDggGAAAADABAJ0BKhAACwACQDglpAADcAD+8jwAAA=="
+                                                alt="HapaiAuto">
+                                            <span>40 тис. км.</span>
+                                        </li>
+                                        <li>
+                                            <img src="data:image/webp;base64,UklGRqIAAABXRUJQVlA4WAoAAAAQAAAADAAADwAAQUxQSGMAAAABcEhre948CEEISlFqsBgsBkNIDTaDD2EIRfgQnv4zRMQEAFOkOSpAGV6/gY/3jdmHWeI0XqHaUx1AqD/VGVjUSDWgrqdQXUeq9na6rSUfBLQHFfjedICyXixc1r+6cN+jcQYAVlA4IBgAAAAwAQCdASoNABAAAkA4JaQAA3AA/vI8AAA="
+                                                alt="HapaiAuto">
+                                            <span>Київ</span>
+                                        </li>
+                                    </ul>
+                                    <div class="hapaiavto-red-btn">
+                                        <a href="#">Переглянути авто</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="hapaiavto-shop-showcase-list-item">
+                                    <div class="hapaiavto-shop-showcase-list-item-image">
+                                        <img src="data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAABQDgCdASodAb4APp1OpE4CAoALATiWlu4XaxG0AJ7APfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sAA/v9mNAAAAAAAAAAA"
+                                            alt="HapaiAuto">
+                                    </div>
+                                    <div class="hapaiavto-shop-showcase-list-item-title-price">
+                                        <div>
+                                            <p>Toyota RAV4</p>
+                                            <i>2025</i>
+                                        </div>
+                                        <div>
+                                            <span>$34 000</span>
+                                        </div>
+                                    </div>
+                                    <ul class="hapaiavto-shop-showcase-list-item-tags">
+                                        <li>
+                                            <img src="data:image/webp;base64,UklGRpIAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSFQAAAABYEhtW50PIYQQhpBBIYSQwUKYQQghhDCEH+FH6H7ZCCJiAvDPQERhQShN+dVqZvN4wCLSWpZ5nlwwyMuJ8702jFty54GxtAQAF4+Ys+/gaOiTw/dWUDggGAAAADABAJ0BKhAAEAACQDglpAADcAD+8jwAAA=="
+                                                alt="HapaiAuto">
+                                            <span>Бензин 2 л.</span>
+                                        </li>
+                                        <li>
+                                            <img src="data:image/webp;base64,UklGRp4AAABXRUJQVlA4WAoAAAAQAAAACwAADwAAQUxQSF8AAAABcBBJstWsBCScBJwEB1kHiYMg4Tl4T0IcIOUkPAmTz4GGiJgASXrM+VLt4wn3agD0av9r1ZKQUUmg/8V2gO0tEjBlQhx/7wDQuAFdhTRTOov1bOCNfsEne9IHaWhcbABWUDggGAAAADABAJ0BKgwAEAACQDglpAADcAD+8jwAAA=="
+                                                alt="HapaiAuto">
+                                            <span>Автомат</span>
+                                        </li>
+                                        <li>
+                                            <img src="data:image/webp;base64,UklGRqQAAABXRUJQVlA4WAoAAAAQAAAADwAACgAAQUxQSGYAAAABcEhtW/Y8CCGEEEIIn8FmMISFkEkI7wxCeBEehHs/zSEiJkCSrnA6bjrXADqQ7admAhPwbpLS3RzbctEdzK/ZMBScsxmwfJrlyW91H0DoAl59N3NcybEG5JpjjLk2pOqj6H+5dwFWUDggGAAAADABAJ0BKhAACwACQDglpAADcAD+8jwAAA=="
+                                                alt="HapaiAuto">
+                                            <span>40 тис. км.</span>
+                                        </li>
+                                        <li>
+                                            <img src="data:image/webp;base64,UklGRqIAAABXRUJQVlA4WAoAAAAQAAAADAAADwAAQUxQSGMAAAABcEhre948CEEISlFqsBgsBkNIDTaDD2EIRfgQnv4zRMQEAFOkOSpAGV6/gY/3jdmHWeI0XqHaUx1AqD/VGVjUSDWgrqdQXUeq9na6rSUfBLQHFfjedICyXixc1r+6cN+jcQYAVlA4IBgAAAAwAQCdASoNABAAAkA4JaQAA3AA/vI8AAA="
+                                                alt="HapaiAuto">
+                                            <span>Київ</span>
+                                        </li>
+                                    </ul>
+                                    <div class="hapaiavto-red-btn">
+                                        <a href="#">Переглянути авто</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="hapaiavto-shop-showcase-list-item">
+                                    <div class="hapaiavto-shop-showcase-list-item-image">
+                                        <img src="data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAABQDgCdASodAb4APp1OpE4CAoALATiWlu4XaxG0AJ7APfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sAA/v9mNAAAAAAAAAAA"
+                                            alt="HapaiAuto">
+                                    </div>
+                                    <div class="hapaiavto-shop-showcase-list-item-title-price">
+                                        <div>
+                                            <p>Toyota RAV4</p>
+                                            <i>2025</i>
+                                        </div>
+                                        <div>
+                                            <span>$34 000</span>
+                                        </div>
+                                    </div>
+                                    <ul class="hapaiavto-shop-showcase-list-item-tags">
+                                        <li>
+                                            <img src="data:image/webp;base64,UklGRpIAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSFQAAAABYEhtW50PIYQQhpBBIYSQwUKYQQghhDCEH+FH6H7ZCCJiAvDPQERhQShN+dVqZvN4wCLSWpZ5nlwwyMuJ8702jFty54GxtAQAF4+Ys+/gaOiTw/dWUDggGAAAADABAJ0BKhAAEAACQDglpAADcAD+8jwAAA=="
+                                                alt="HapaiAuto">
+                                            <span>Бензин 2 л.</span>
+                                        </li>
+                                        <li>
+                                            <img src="data:image/webp;base64,UklGRp4AAABXRUJQVlA4WAoAAAAQAAAACwAADwAAQUxQSF8AAAABcBBJstWsBCScBJwEB1kHiYMg4Tl4T0IcIOUkPAmTz4GGiJgASXrM+VLt4wn3agD0av9r1ZKQUUmg/8V2gO0tEjBlQhx/7wDQuAFdhTRTOov1bOCNfsEne9IHaWhcbABWUDggGAAAADABAJ0BKgwAEAACQDglpAADcAD+8jwAAA=="
+                                                alt="HapaiAuto">
+                                            <span>Автомат</span>
+                                        </li>
+                                        <li>
+                                            <img src="data:image/webp;base64,UklGRqQAAABXRUJQVlA4WAoAAAAQAAAADwAACgAAQUxQSGYAAAABcEhtW/Y8CCGEEEIIn8FmMISFkEkI7wxCeBEehHs/zSEiJkCSrnA6bjrXADqQ7admAhPwbpLS3RzbctEdzK/ZMBScsxmwfJrlyW91H0DoAl59N3NcybEG5JpjjLk2pOqj6H+5dwFWUDggGAAAADABAJ0BKhAACwACQDglpAADcAD+8jwAAA=="
+                                                alt="HapaiAuto">
+                                            <span>40 тис. км.</span>
+                                        </li>
+                                        <li>
+                                            <img src="data:image/webp;base64,UklGRqIAAABXRUJQVlA4WAoAAAAQAAAADAAADwAAQUxQSGMAAAABcEhre948CEEISlFqsBgsBkNIDTaDD2EIRfgQnv4zRMQEAFOkOSpAGV6/gY/3jdmHWeI0XqHaUx1AqD/VGVjUSDWgrqdQXUeq9na6rSUfBLQHFfjedICyXixc1r+6cN+jcQYAVlA4IBgAAAAwAQCdASoNABAAAkA4JaQAA3AA/vI8AAA="
+                                                alt="HapaiAuto">
+                                            <span>Київ</span>
+                                        </li>
+                                    </ul>
+                                    <div class="hapaiavto-red-btn">
+                                        <a href="#">Переглянути авто</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="hapaiavto-shop-showcase-list-item">
+                                    <div class="hapaiavto-shop-showcase-list-item-image">
+                                        <img src="data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAABQDgCdASodAb4APp1OpE4CAoALATiWlu4XaxG0AJ7APfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+sAA/v9mNAAAAAAAAAAA"
+                                            alt="HapaiAuto">
+                                    </div>
+                                    <div class="hapaiavto-shop-showcase-list-item-title-price">
+                                        <div>
+                                            <p>Toyota RAV4</p>
+                                            <i>2025</i>
+                                        </div>
+                                        <div>
+                                            <span>$34 000</span>
+                                        </div>
+                                    </div>
+                                    <ul class="hapaiavto-shop-showcase-list-item-tags">
+                                        <li>
+                                            <img src="data:image/webp;base64,UklGRpIAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSFQAAAABYEhtW50PIYQQhpBBIYSQwUKYQQghhDCEH+FH6H7ZCCJiAvDPQERhQShN+dVqZvN4wCLSWpZ5nlwwyMuJ8702jFty54GxtAQAF4+Ys+/gaOiTw/dWUDggGAAAADABAJ0BKhAAEAACQDglpAADcAD+8jwAAA=="
+                                                alt="HapaiAuto">
+                                            <span>Бензин 2 л.</span>
+                                        </li>
+                                        <li>
+                                            <img src="data:image/webp;base64,UklGRp4AAABXRUJQVlA4WAoAAAAQAAAACwAADwAAQUxQSF8AAAABcBBJstWsBCScBJwEB1kHiYMg4Tl4T0IcIOUkPAmTz4GGiJgASXrM+VLt4wn3agD0av9r1ZKQUUmg/8V2gO0tEjBlQhx/7wDQuAFdhTRTOov1bOCNfsEne9IHaWhcbABWUDggGAAAADABAJ0BKgwAEAACQDglpAADcAD+8jwAAA=="
+                                                alt="HapaiAuto">
+                                            <span>Автомат</span>
+                                        </li>
+                                        <li>
+                                            <img src="data:image/webp;base64,UklGRqQAAABXRUJQVlA4WAoAAAAQAAAADwAACgAAQUxQSGYAAAABcEhtW/Y8CCGEEEIIn8FmMISFkEkI7wxCeBEehHs/zSEiJkCSrnA6bjrXADqQ7admAhPwbpLS3RzbctEdzK/ZMBScsxmwfJrlyW91H0DoAl59N3NcybEG5JpjjLk2pOqj6H+5dwFWUDggGAAAADABAJ0BKhAACwACQDglpAADcAD+8jwAAA=="
+                                                alt="HapaiAuto">
+                                            <span>40 тис. км.</span>
+                                        </li>
+                                        <li>
+                                            <img src="data:image/webp;base64,UklGRqIAAABXRUJQVlA4WAoAAAAQAAAADAAADwAAQUxQSGMAAAABcEhre948CEEISlFqsBgsBkNIDTaDD2EIRfgQnv4zRMQEAFOkOSpAGV6/gY/3jdmHWeI0XqHaUx1AqD/VGVjUSDWgrqdQXUeq9na6rSUfBLQHFfjedICyXixc1r+6cN+jcQYAVlA4IBgAAAAwAQCdASoNABAAAkA4JaQAA3AA/vI8AAA="
+                                                alt="HapaiAuto">
+                                            <span>Київ</span>
+                                        </li>
+                                    </ul>
+                                    <div class="hapaiavto-red-btn">
+                                        <a href="#">Переглянути авто</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hapaiavto-related-slider-controls">
+                        <div class="hapaiavto-related-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M15 18l-6-6 6-6" />
+                            </svg>
+                        </div>
+                        <div class="swiper-pagination hapaiavto-related-pagination"></div>
+                        <div class="hapaiavto-related-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M9 18l6-6-6-6" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hapaiavto-black-btn">
+                    <a href="#">До каталогу</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="find-us-map-sect">
+        <div class="map-wrapper">
+            <div id="map"></div>
+        </div>
+
+        <div class="container find-us-container">
+            <div class="find-us-content">
+                <h2>Де нас знайти?</h2>
+                <div class="find-us-subtitle">Список майданчиків</div>
+
+                <ul class="find-us-list">
+                    <li class="active" data-center="[30.5222, 50.4876]">
+                        <div class="find-us-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="29" fill="none">
+                                <path fill="#FF4800"
+                                    d="M15.704 0 0 18.427h7.357L5.137 28.89l8.583-10.462h7.72L37.143 0zm2.778 13.364h-7.37l7.075-8.301h7.373l-3.527 4.132z" />
+                            </svg>
+                        </div>
+                        <div class="find-us-text">
+                            <span>м.Київ</span>
+                            <i>Blockbuster Mall паркінг D</i>
+                        </div>
+                    </li>
+                    <li data-center="[30.3601, 50.4223]">
+                        <div class="find-us-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="29" fill="none">
+                                <path fill="#FF4800"
+                                    d="M15.704 0 0 18.427h7.357L5.137 28.89l8.583-10.462h7.72L37.143 0zm2.778 13.364h-7.37l7.075-8.301h7.373l-3.527 4.132z" />
+                            </svg>
+                        </div>
+                        <div class="find-us-text">
+                            <span>м.Київ</span>
+                            <i>Велика окружна дорога, 22</i>
+                        </div>
+                    </li>
+                    <li data-center="[24.0311, 49.8429]">
+                        <div class="find-us-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="29" fill="none">
+                                <path fill="#FF4800"
+                                    d="M15.704 0 0 18.427h7.357L5.137 28.89l8.583-10.462h7.72L37.143 0zm2.778 13.364h-7.37l7.075-8.301h7.373l-3.527 4.132z" />
+                            </svg>
+                        </div>
+                        <div class="find-us-text">
+                            <span>м.Львів</span>
+                            <i>Пасічна 127, Автобаза №1</i>
+                        </div>
+                    </li>
+                    <li data-center="[35.0461, 48.4647]">
+                        <div class="find-us-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="29" fill="none">
+                                <path fill="#FF4800"
+                                    d="M15.704 0 0 18.427h7.357L5.137 28.89l8.583-10.462h7.72L37.143 0zm2.778 13.364h-7.37l7.075-8.301h7.373l-3.527 4.132z" />
+                            </svg>
+                        </div>
+                        <div class="find-us-text">
+                            <span>м.Дніпро</span>
+                            <i>Запорізьке шосе, 63</i>
+                        </div>
+                    </li>
+                    <li data-center="[28.4682, 49.2330]">
+                        <div class="find-us-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="29" fill="none">
+                                <path fill="#FF4800"
+                                    d="M15.704 0 0 18.427h7.357L5.137 28.89l8.583-10.462h7.72L37.143 0zm2.778 13.364h-7.37l7.075-8.301h7.373l-3.527 4.132z" />
+                            </svg>
+                        </div>
+                        <div class="find-us-text">
+                            <span>м.Вінниця</span>
+                            <i>Немирівське шосе, 94Е</i>
+                        </div>
+                    </li>
+                    <li data-center="[30.7326, 46.4825]">
+                        <div class="find-us-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="29" fill="none">
+                                <path fill="#FF4800"
+                                    d="M15.704 0 0 18.427h7.357L5.137 28.89l8.583-10.462h7.72L37.143 0zm2.778 13.364h-7.37l7.075-8.301h7.373l-3.527 4.132z" />
+                            </svg>
+                        </div>
+                        <div class="find-us-text">
+                            <span>м.Одеса</span>
+                            <i>Аеропортівська, 29</i>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="hapaiavto-red-btn find-us-btn">
+                    <a href="#" class="get-in-touch-btn">Зворотній зв'язок</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hapaiavto-faq-sect">
+        <div class="container">
+            <div class="hapaiavto-faq-inner">
+                <div class="hapaiavto-faq-left">
+                    <div class="hapaiavto-faq-left-top">
+                        <h2>Поширені питання</h2>
+                        <ul class="hapaiavto-faq-tabs">
+                            <li class="active" data-tab="general">Загальні</li>
+                            <li data-tab="buying">Купівля</li>
+                            <li data-tab="selling">Продаж</li>
+                            <li data-tab="tradein">Trade-in</li>
+                        </ul>
+                    </div>
+
+                    <div class="hapaiavto-faq-contact hapaiavto-faq-contact-desktop">
+                        <p>Не знайшли відповідь? Залиште заявку!</p>
+                        <div class="hapaiavto-red-btn">
+                            <button class="get-in-touch-btn">Зворотній зв'язок</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hapaiavto-faq-right">
+                    <div class="hapaiavto-faq-content active" id="faq-general">
+                        <div class="hapaiavto-faq-item">
+                            <div class="hapaiavto-faq-question">
+                                <span>Як поставити авто на продаж?</span>
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="hapaiavto-faq-answer">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in odio vel nunc
+                                    varius rutrum.</p>
+                            </div>
+                        </div>
+                        <div class="hapaiavto-faq-item">
+                            <div class="hapaiavto-faq-question">
+                                <span>Що потрібно для продажу авто?</span>
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="hapaiavto-faq-answer">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in odio vel nunc
+                                    varius rutrum.</p>
+                            </div>
+                        </div>
+                        <div class="hapaiavto-faq-item">
+                            <div class="hapaiavto-faq-question">
+                                <span>Як швидко продавець отримує гроші після продажу</span>
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="hapaiavto-faq-answer">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in odio vel nunc
+                                    varius rutrum.</p>
+                            </div>
+                        </div>
+                        <div class="hapaiavto-faq-item">
+                            <div class="hapaiavto-faq-question">
+                                <span>Чи можна отримати гроші в доларах?</span>
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="hapaiavto-faq-answer">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in odio vel nunc
+                                    varius rutrum.</p>
+                            </div>
+                        </div>
+                        <div class="hapaiavto-faq-item">
+                            <div class="hapaiavto-faq-question">
+                                <span>Чи можна отримати гроші в доларах?</span>
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="hapaiavto-faq-answer">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in odio vel nunc
+                                    varius rutrum.</p>
+                            </div>
+                        </div>
+                        <div class="hapaiavto-faq-item">
+                            <div class="hapaiavto-faq-question">
+                                <span>Чи можна отримати гроші в доларах?</span>
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="hapaiavto-faq-answer">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in odio vel nunc
+                                    varius rutrum.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hapaiavto-faq-content" id="faq-buying">
+                        <div class="hapaiavto-faq-item">
+                            <div class="hapaiavto-faq-question">
+                                <span>Як купити авто онлайн?</span>
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="hapaiavto-faq-answer">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in odio vel nunc
+                                    varius rutrum.</p>
+                            </div>
+                        </div>
+                        <div class="hapaiavto-faq-item">
+                            <div class="hapaiavto-faq-question">
+                                <span>Які документи потрібні для купівлі?</span>
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="hapaiavto-faq-answer">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in odio vel nunc
+                                    varius rutrum.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hapaiavto-faq-content" id="faq-selling">
+                        <div class="hapaiavto-faq-item">
+                            <div class="hapaiavto-faq-question">
+                                <span>Як безпечно продати автомобіль?</span>
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="hapaiavto-faq-answer">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in odio vel nunc
+                                    varius rutrum.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hapaiavto-faq-content" id="faq-tradein">
+                        <div class="hapaiavto-faq-item">
+                            <div class="hapaiavto-faq-question">
+                                <span>Скільки займає оцінка авто по Trade-in?</span>
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="hapaiavto-faq-answer">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in odio vel nunc
+                                    varius rutrum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hapaiavto-faq-contact hapaiavto-faq-contact-mob">
+                    <p>Не знайшли відповідь? Залиште заявку!</p>
+                    <div class="hapaiavto-red-btn">
+                        <button class="get-in-touch-btn">Зворотній зв'язок</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-box">
+                <div class="footer-top">
+                    <div class="footer-col footer-menu-1">
+                        <ul class="footer-nav">
+                            <li><a href="#">Купити авто</a></li>
+                            <li><a href="#">Продати авто</a></li>
+                            <li><a href="#">Trade-in</a></li>
+                            <li><a href="#">Автовикуп</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col footer-menu-2">
+                        <ul class="footer-nav">
+                            <li><a href="#">Фінансування</a></li>
+                            <li><a href="#">Про нас</a></li>
+                            <li><a href="#">Контакти</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col footer-col-social">
+                        <p class="footer-col-title">Соціальні мережі</p>
+                        <ul class="footer-social">
+                            <li>
+                                <a href="#">
+                                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="26" cy="26" r="26" fill="white" />
+                                        <path
+                                            d="M23.4172 29.1814L23.0202 34.7654C23.5882 34.7654 23.8342 34.5214 24.1292 34.2284L26.7922 31.6834L32.3102 35.7244C33.3222 36.2884 34.0352 35.9914 34.3082 34.7934L37.9302 17.8214L37.9312 17.8204C38.2522 16.3244 37.3902 15.7394 36.4042 16.1064L15.1142 24.2574C13.6612 24.8214 13.6832 25.6314 14.8672 25.9984L20.3102 27.6914L32.9532 19.7804C33.5482 19.3864 34.0892 19.6044 33.6442 19.9984L23.4172 29.1814Z"
+                                            fill="url(#paint0_linear_82_3007)" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_82_3007" x1="25.9997" y1="16" x2="25.9997"
+                                                y2="36.0001" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FF4800" />
+                                                <stop offset="1" stop-color="#992B00" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="26" cy="26" r="26" fill="white" />
+                                        <path
+                                            d="M36.5147 20.0156C35.145 20.0156 33.8813 19.5619 32.8664 18.7964C31.7025 17.9189 30.8663 16.6317 30.571 15.1481C30.4978 14.7816 30.4585 14.4033 30.4547 14.0156H26.5421V24.7069L26.5374 30.563C26.5374 32.1286 25.5178 33.4561 24.1046 33.923C23.6944 34.0584 23.2514 34.1227 22.7902 34.0973C22.2014 34.065 21.6497 33.8873 21.1702 33.6005C20.1497 32.9902 19.4578 31.883 19.4391 30.6164C19.4096 28.6369 21.0099 27.023 22.988 27.023C23.3785 27.023 23.7535 27.0867 24.1046 27.2025V24.2803V23.2298C23.7342 23.175 23.3574 23.1464 22.9763 23.1464C20.8111 23.1464 18.7861 24.0464 17.3386 25.6678C16.2446 26.8931 15.5883 28.4564 15.4871 30.0956C15.3544 32.2491 16.1424 34.2961 17.6705 35.8064C17.895 36.0281 18.1308 36.2339 18.3774 36.4237C19.6875 37.432 21.2892 37.9786 22.9763 37.9786C23.3574 37.9786 23.7342 37.9505 24.1046 37.8956C25.6805 37.6622 27.1346 36.9408 28.2821 35.8064C29.6921 34.4128 30.4711 32.5627 30.4796 30.5934L30.4594 21.8484C31.1321 22.3673 31.8675 22.7967 32.6569 23.13C33.8846 23.648 35.1863 23.9105 36.526 23.91V21.0689V20.0147C36.5269 20.0156 36.5157 20.0156 36.5147 20.0156Z"
+                                            fill="url(#paint0_linear_82_3011)" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_82_3011" x1="25.9993" y1="14.0156"
+                                                x2="25.9993" y2="37.9786" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FF4800" />
+                                                <stop offset="1" stop-color="#992B00" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="26" cy="26" r="26" fill="white" />
+                                        <g clip-path="url(#clip0_82_3016)">
+                                            <path
+                                                d="M25.9992 23.4492C25.4949 23.4492 25.0019 23.5988 24.5825 23.879C24.1632 24.1592 23.8363 24.5574 23.6433 25.0234C23.4503 25.4893 23.3998 26.002 23.4982 26.4967C23.5966 26.9914 23.8395 27.4457 24.1961 27.8023C24.5527 28.159 25.0071 28.4018 25.5017 28.5002C25.9964 28.5986 26.5091 28.5481 26.9751 28.3551C27.441 28.1621 27.8393 27.8353 28.1195 27.4159C28.3997 26.9966 28.5492 26.5036 28.5492 25.9992C28.5485 25.3231 28.2796 24.6749 27.8016 24.1969C27.3235 23.7188 26.6753 23.4499 25.9992 23.4492Z"
+                                                fill="url(#paint0_linear_82_3016)" />
+                                            <path
+                                                d="M32.6356 14.375H19.3625C18.0403 14.377 16.7729 14.9031 15.838 15.838C14.9031 16.7729 14.377 18.0403 14.375 19.3625V32.6356C14.3766 33.9581 14.9025 35.226 15.8374 36.1613C16.7724 37.0965 18.04 37.6229 19.3625 37.625H32.6356C33.9584 37.6233 35.2265 37.0971 36.1618 36.1618C37.0971 35.2265 37.6233 33.9584 37.625 32.6356V19.3625C37.6229 18.04 37.0965 16.7724 36.1613 15.8374C35.226 14.9025 33.9581 14.3766 32.6356 14.375ZM26 31.1488C24.9817 31.1488 23.9862 30.8468 23.1395 30.281C22.2928 29.7153 21.6329 28.9112 21.2432 27.9703C20.8535 27.0295 20.7515 25.9943 20.9502 24.9955C21.1488 23.9968 21.6392 23.0793 22.3593 22.3593C23.0793 21.6392 23.9968 21.1488 24.9955 20.9502C25.9943 20.7515 27.0295 20.8535 27.9703 21.2432C28.9112 21.6329 29.7153 22.2928 30.281 23.1395C30.8468 23.9862 31.1488 24.9817 31.1488 26C31.1471 27.365 30.6041 28.6737 29.6389 29.6389C28.6737 30.6041 27.365 31.1471 26 31.1488ZM32.5025 21.3387C32.1397 21.3386 31.7851 21.2308 31.4836 21.0292C31.182 20.8275 30.947 20.5409 30.8082 20.2057C30.6695 19.8705 30.6332 19.5017 30.7041 19.1459C30.7749 18.7901 30.9496 18.4633 31.2061 18.2067C31.4626 17.9502 31.7895 17.7755 32.1453 17.7047C32.5011 17.6339 32.8699 17.6701 33.2051 17.8089C33.5403 17.9476 33.8269 18.1826 34.0285 18.4842C34.2302 18.7857 34.3379 19.1403 34.3381 19.5031C34.3377 19.9898 34.1441 20.4565 33.8 20.8006C33.4558 21.1448 32.9892 21.3383 32.5025 21.3387Z"
+                                                fill="url(#paint1_linear_82_3016)" />
+                                        </g>
+                                        <defs>
+                                            <linearGradient id="paint0_linear_82_3016" x1="25.9992" y1="23.4492"
+                                                x2="25.9992" y2="28.5492" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FF4800" />
+                                                <stop offset="1" stop-color="#992B00" />
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear_82_3016" x1="26" y1="14.375" x2="26"
+                                                y2="37.625" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FF4800" />
+                                                <stop offset="1" stop-color="#992B00" />
+                                            </linearGradient>
+                                            <clipPath id="clip0_82_3016">
+                                                <rect width="24" height="24" fill="white"
+                                                    transform="translate(14 14)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col footer-col-contacts">
+                        <p class="footer-col-title">Гаряча лінія</p>
+                        <a href="tel:+380673418964" class="footer-phone">067 341 89 64</a>
+                        <p class="footer-col-title">Пошта</p>
+                        <a href="mailto:hapaiavto@ulf.ua" class="footer-email">hapaiavto@ulf.ua</a>
+                    </div>
+                </div>
+                <div class="footer-bottom-logo">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1091' height='170' fill='none'%3E%3Cpath fill='%23535353' d='m627.65 0-18.195 21.288-18.325 21.464h-38.025L589.607 0zM16.682 68.816h33.443l9.37 21.74 17.05-21.74h38.571L73.531 121.82l20.337 45.362-32.798.699-8.5-18.97-14.298 18.271H0l38.324-50.071-21.642-48.299zM160.427 99.047h-37.543q7.132-33.039 60.821-33.04c16.267 0 27.503 2.005 33.695 6.007q9.294 6.01 9.294 18.023 0 6.386-2.252 16.707l-9.761 45.992c-.626 2.504-2.755 14.455-2.755 14.455h-35.539l.375-10.512c-11.261 8.89-24.528 13.329-39.799 13.329-8.634 0-15.709-1.943-21.212-5.821q-8.26-5.815-8.259-16.896-.001-12.39 7.133-21.117 7.133-8.73 16.896-12.578c6.506-2.562 13.704-4.224 21.588-4.975q14.64-1.314 22.338-3.284 7.693-1.97 9.855-4.034 2.156-2.061 2.158-5.631 0-6.195-11.262-6.196-12.579 0-15.771 9.574zm21.398 24.594a77 77 0 0 1-16.521 4.505c-11.142 1.876-16.707 6.257-16.707 13.138 0 1.754.874 3.284 2.627 4.6q2.624 1.973 8.073 1.972 9.761 0 14.83-6.101 5.068-6.097 7.698-18.114M248.983 68.828h107.004l-21.026 98.369h-39.046l14.83-69.831h-28.909l-14.83 69.831h-39.045l21.026-98.369zM533.74 68.828l-11.452 53.875 44.866-53.875h39.234l-21.026 98.369h-37.543l11.076-51.998-44.68 51.998H475.17l21.026-98.369zM745.594 167.182l21.026-98.37h59.696q36.23.001 36.231 19.71 0 10.891-7.413 18.115c-4.946 4.818-10.544 7.602-16.802 8.353q18.397 4.505 18.398 18.398-.002 14.642-12.578 24.216-12.577 9.573-35.105 9.574h-63.45zm45.992-39.796-3.569 17.272h14.645c5.507 0 9.636-.685 12.388-2.067q4.129-2.062 4.129-8.634 0-3.562-2.908-5.07-2.913-1.499-10.045-1.501h-14.644zm7.697-36.046-3.379 16.142h14.641q6.945 0 10.325-2.252t3.379-8.073c0-2-.722-3.473-2.158-4.41q-2.159-1.408-8.167-1.407h-14.645zM876.063 68.828h107.003l-6.195 28.534h-33.98l-14.83 69.832h-39.045l14.83-69.832h-33.979zM1044.44 66.008c14.77 0 26.22 3.444 34.36 10.325 8.13 6.885 12.2 16.332 12.2 28.348q0 11.64-4.23 22.903c-2.81 7.508-6.91 14.488-12.29 20.931-5.39 6.448-12.58 11.638-21.59 15.581-9.01 3.944-19.15 5.912-30.41 5.912-14.15 0-25.437-3.284-33.886-9.855q-12.672-9.857-12.672-28.439.001-16.707 7.508-31.352 7.507-14.641 23.46-24.5c10.64-6.57 23.15-9.854 37.55-9.854m-5.07 26.281c-5.25 0-9.79 2.129-13.61 6.382-3.82 4.257-6.47 9.01-7.98 14.265q-2.25 7.885-2.25 15.206c0 10.391 4.19 15.581 12.58 15.581 4.5 0 8.42-1.469 11.73-4.41 3.31-2.938 5.76-6.539 7.32-10.796 1.57-4.253 2.69-8.073 3.38-11.451s1.03-6.196 1.03-8.449c0-5.004-1.06-8.976-3.19-11.921-2.13-2.938-5.13-4.41-9.01-4.41zM407.509 99.047h-37.543q7.132-33.039 60.822-33.04c16.266 0 27.502 2.005 33.694 6.007q9.294 6.01 9.294 18.023 0 6.386-2.252 16.707l-9.76 45.992c-.627 2.504-2.756 14.455-2.756 14.455h-35.539l.376-10.512c-11.262 8.89-24.529 13.329-39.8 13.329-8.634 0-15.709-1.943-21.212-5.821q-8.26-5.815-8.259-16.896 0-12.39 7.133-21.117 7.133-8.73 16.896-12.578c6.506-2.562 13.704-4.224 21.588-4.975q14.64-1.314 22.338-3.284 7.694-1.97 9.855-4.034c1.436-1.374 2.158-3.251 2.158-5.631q0-6.195-11.262-6.196-12.579 0-15.771 9.574zm21.402 24.594a77 77 0 0 1-16.522 4.505c-11.141 1.876-16.707 6.257-16.707 13.138 0 1.754.875 3.284 2.628 4.6q2.623 1.973 8.073 1.972c6.506 0 11.452-2.034 14.83-6.101q5.068-6.097 7.698-18.114M676.972 99.047h-37.544c4.757-22.025 25.028-33.04 60.822-33.04 16.267 0 27.503 2.005 33.695 6.007q9.294 6.01 9.294 18.023 0 6.386-2.252 16.707l-9.761 45.992c-.626 2.504-2.755 14.455-2.755 14.455h-35.539l.375-10.512c-11.262 8.89-24.528 13.329-39.799 13.329-8.634 0-15.709-1.943-21.212-5.821q-8.26-5.815-8.259-16.896-.001-12.39 7.133-21.117 7.133-8.73 16.896-12.578c6.506-2.562 13.704-4.224 21.588-4.975q14.64-1.314 22.338-3.284 7.693-1.97 9.855-4.034 2.156-2.061 2.158-5.631 0-6.195-11.263-6.196-12.578 0-15.77 9.574zm21.401 24.594a77 77 0 0 1-16.521 4.505c-11.142 1.876-16.707 6.257-16.707 13.138 0 1.754.875 3.284 2.628 4.6q2.623 1.973 8.073 1.972 9.76 0 14.83-6.101 5.067-6.097 7.697-18.114' /%3E%3C/svg%3E"
+                        alt="HapaiAuto">
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="copyright-text">
+                    ©2017-2025, Хапай Авто. Усі права захищені.
+                </div>
+                <div class="copyright-links">
+                    <a href="#">Політика конфіденційності</a>
+                    <a href="#">Правила використання</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="ark-modal ark-modal-get-in-touch">
+        <div class="ark-overlay ark-overlay-get-in-touch">
+            <div class="ark-popup ark-popup-get-in-touch">
+                <div class="ark-popup-content ark-popup-content-get-in-touch">
+                    <div class="ark-popup-close ark-popup-close-get-in-touch">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none">
+                            <circle cx="25" cy="25" r="25" fill="#F5F5F5" />
+                            <path stroke="#FE6034" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.333"
+                                d="m30.773 19.223-11.549 11.55M19.227 19.223l11.549 11.55" />
+                        </svg>
+                    </div>
+                    <div class="ark-popup-header">
+                        <h2 class="ark-popup-title">Зворотній зв'язок</h2>
+                        <p class="ark-popup-subtitle">Заповніть форму та наш менеджер<br>зв'яжеться з вами найближчим
+                            часом</p>
+                    </div>
+                    <div class="ark-popup-body">
+                        <form action="#" class="ark-popup-form">
+                            <div class="ark-form-row">
+                                <div class="ark-input-group">
+                                    <label for="name">Ім'я<span>*</span></label>
+                                    <input type="text" id="name" placeholder="Ваше Ім'я">
+                                </div>
+                                <div class="ark-input-group">
+                                    <label for="phone">Номер телефону<span>*</span></label>
+                                    <div class="ark-phone-input">
+                                        <div class="ark-phone-prefix">
+                                            <span>UA</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"
+                                                viewBox="0 0 10 6" fill="none">
+                                                <path d="M1 1L5 5L9 1" stroke="#535353" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <input type="tel" id="phone" value="+380 " placeholder="Введіть номер">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ark-input-group">
+                                <label for="comment">Коментар</label>
+                                <textarea id="comment" placeholder="Напишіть ваш коментар"></textarea>
+                            </div>
+                            <div class="hapaiavto-red-btn">
+                                <button type="submit">Замовити дзвінок</button>
+                            </div>
+                            <p class="ark-form-consent">Відправляючи форму, ви погоджуєтесь<br>на обробку персональних
+                                даних</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ark-modal ark-modal-get-an-estimate">
+        <div class="ark-overlay ark-overlay-get-an-estimate">
+            <div class="ark-popup ark-popup-get-an-estimate">
+                <div class="ark-popup-content ark-popup-content-get-an-estimate">
+                    <div class="ark-popup-close ark-popup-close-get-an-estimate">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none">
+                            <circle cx="25" cy="25" r="25" fill="#F5F5F5" />
+                            <path stroke="#FE6034" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.333"
+                                d="m30.773 19.223-11.549 11.55M19.227 19.223l11.549 11.55" />
+                        </svg>
+                    </div>
+                    <div class="ark-popup-header">
+                        <h2 class="ark-popup-title">Отримати оцінку</h2>
+                        <p class="ark-popup-subtitle">Заповніть форму та наш менеджер<br>зв'яжеться з вами найближчим
+                            часом</p>
+                    </div>
+                    <div class="ark-popup-body">
+                        <form action="#" class="ark-popup-form">
+                            <div class="ark-form-row">
+                                <div class="ark-input-group">
+                                    <label for="est-name">Ім'я<span>*</span></label>
+                                    <input type="text" id="est-name" placeholder="Ваше Ім'я">
+                                </div>
+                                <div class="ark-input-group">
+                                    <label for="est-phone">Номер телефону<span>*</span></label>
+                                    <div class="ark-phone-input">
+                                        <div class="ark-phone-prefix">
+                                            <span>UA</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"
+                                                viewBox="0 0 10 6" fill="none">
+                                                <path d="M1 1L5 5L9 1" stroke="#535353" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <input type="tel" id="est-phone" value="+380 " placeholder="Введіть номер">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ark-form-row">
+                                <div class="ark-input-group">
+                                    <label for="est-model">Марка та модель авто<span>*</span></label>
+                                    <input type="text" id="est-model" placeholder="Введіть марку та модель">
+                                </div>
+                                <div class="ark-input-group">
+                                    <label for="est-year">Рік випуску</label>
+                                    <input type="text" id="est-year" placeholder="Введіть рік випуску авто">
+                                </div>
+                            </div>
+                            <div class="ark-form-row">
+                                <div class="ark-input-group">
+                                    <label for="est-mileage">Пробіг</label>
+                                    <input type="text" id="est-mileage" placeholder="Введіть пробіг авто">
+                                </div>
+                                <div class="ark-input-group">
+                                    <label for="est-link">Посилання на авто (не обов'язково)</label>
+                                    <input type="text" id="est-link" placeholder="Вставте посилання на авто">
+                                </div>
+                            </div>
+                            <div class="hapaiavto-red-btn estimate-submit-btn">
+                                <button type="submit">Отримати
+                                    консультацію</button>
+                            </div>
+                            <p class="ark-form-consent">Відправляючи форму, ви погоджуєтесь<br>на обробку персональних
+                                даних</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ark-modal ark-modal-test-drive">
+        <div class="ark-overlay ark-overlay-test-drive">
+            <div class="ark-popup ark-popup-test-drive">
+                <div class="ark-popup-content ark-popup-content-test-drive">
+                    <div class="ark-popup-close ark-popup-close-test-drive">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none">
+                            <circle cx="25" cy="25" r="25" fill="#F5F5F5" />
+                            <path stroke="#FE6034" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.333"
+                                d="m30.773 19.223-11.549 11.55M19.227 19.223l11.549 11.55" />
+                        </svg>
+                    </div>
+                    <div class="ark-popup-header">
+                        <h2 class="ark-popup-title">Замовити тест-драйв</h2>
+                        <p class="ark-popup-subtitle">Заповніть форму та наш менеджер<br>зв'яжеться з вами найближчим
+                            часом</p>
+                    </div>
+                    <div class="ark-popup-body">
+                        <form action="#" class="ark-popup-form">
+                            <div class="ark-form-row">
+                                <div class="ark-input-group">
+                                    <label for="test-drive-name">Ім'я<span>*</span></label>
+                                    <input type="text" id="test-drive-name" placeholder="Ваше Ім'я">
+                                </div>
+                                <div class="ark-input-group">
+                                    <label for="test-drive-phone">Номер телефону<span>*</span></label>
+                                    <div class="ark-phone-input">
+                                        <div class="ark-phone-prefix">
+                                            <span>UA</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"
+                                                viewBox="0 0 10 6" fill="none">
+                                                <path d="M1 1L5 5L9 1" stroke="#535353" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <input type="tel" id="test-drive-phone" value="+380 "
+                                            placeholder="Введіть номер">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ark-input-group">
+                                <label for="test-drive-comment">Коментар</label>
+                                <textarea id="test-drive-comment" placeholder="Напишіть ваш коментар"></textarea>
+                            </div>
+                            <div class="hapaiavto-red-btn">
+                                <button type="submit">Замовити тест-драйв</button>
+                            </div>
+                            <p class="ark-form-consent">Відправляючи форму, ви погоджуєтесь<br>на обробку персональних
+                                даних</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ark-modal ark-modal-trade">
+        <div class="ark-overlay ark-overlay-trade">
+            <div class="ark-popup ark-popup-trade">
+                <div class="ark-popup-content ark-popup-content-trade">
+                    <div class="ark-popup-close ark-popup-close-trade">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none">
+                            <circle cx="25" cy="25" r="25" fill="#F5F5F5" />
+                            <path stroke="#FE6034" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.333"
+                                d="m30.773 19.223-11.549 11.55M19.227 19.223l11.549 11.55" />
+                        </svg>
+                    </div>
+                    <div class="ark-popup-header">
+                        <h2 class="ark-popup-title">Запропонувати торг</h2>
+                        <p class="ark-popup-subtitle">Заповніть форму та наш менеджер<br>зв'яжеться з вами найближчим
+                            часом</p>
+                    </div>
+                    <div class="ark-popup-body">
+                        <form action="#" class="ark-popup-form">
+                            <div class="ark-form-row">
+                                <div class="ark-input-group">
+                                    <label for="trade-name">Ім'я<span>*</span></label>
+                                    <input type="text" id="trade-name" placeholder="Ваше Ім'я">
+                                </div>
+                                <div class="ark-input-group">
+                                    <label for="trade-phone">Номер телефону<span>*</span></label>
+                                    <div class="ark-phone-input">
+                                        <div class="ark-phone-prefix">
+                                            <span>UA</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"
+                                                viewBox="0 0 10 6" fill="none">
+                                                <path d="M1 1L5 5L9 1" stroke="#535353" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <input type="tel" id="trade-phone" value="+380 " placeholder="Введіть номер">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ark-input-group">
+                                <label for="trade-comment">Коментар</label>
+                                <textarea id="trade-comment" placeholder="Напишіть ваш коментар"></textarea>
+                            </div>
+                            <div class="hapaiavto-red-btn">
+                                <button type="submit">Запропонувати торг</button>
+                            </div>
+                            <p class="ark-form-consent">Відправляючи форму, ви погоджуєтесь<br>на обробку персональних
+                                даних</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ark-modal ark-modal-exchange">
+        <div class="ark-overlay ark-overlay-exchange">
+            <div class="ark-popup ark-popup-exchange">
+                <div class="ark-popup-content ark-popup-content-exchange">
+                    <div class="ark-popup-close ark-popup-close-exchange">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none">
+                            <circle cx="25" cy="25" r="25" fill="#F5F5F5" />
+                            <path stroke="#FE6034" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.333"
+                                d="m30.773 19.223-11.549 11.55M19.227 19.223l11.549 11.55" />
+                        </svg>
+                    </div>
+                    <div class="ark-popup-header">
+                        <h2 class="ark-popup-title">Запропонувати обмін</h2>
+                        <p class="ark-popup-subtitle">Заповніть форму та наш менеджер<br>зв'яжеться з вами найближчим
+                            часом</p>
+                    </div>
+                    <div class="ark-popup-body">
+                        <form action="#" class="ark-popup-form">
+                            <div class="ark-form-row">
+                                <div class="ark-input-group">
+                                    <label for="exc-name">Ім'я<span>*</span></label>
+                                    <input type="text" id="exc-name" placeholder="Ваше Ім'я">
+                                </div>
+                                <div class="ark-input-group">
+                                    <label for="exc-phone">Номер телефону<span>*</span></label>
+                                    <div class="ark-phone-input">
+                                        <div class="ark-phone-prefix">
+                                            <span>UA</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"
+                                                viewBox="0 0 10 6" fill="none">
+                                                <path d="M1 1L5 5L9 1" stroke="#535353" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <input type="tel" id="exc-phone" value="+380 " placeholder="Введіть номер">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ark-form-row">
+                                <div class="ark-input-group">
+                                    <label for="exc-model">Марка та модель авто<span>*</span></label>
+                                    <input type="text" id="exc-model" placeholder="Введіть марку та модель">
+                                </div>
+                                <div class="ark-input-group">
+                                    <label for="exc-year">Рік випуску</label>
+                                    <input type="text" id="exc-year" placeholder="Введіть рік випуску авто">
+                                </div>
+                            </div>
+                            <div class="ark-form-row">
+                                <div class="ark-input-group">
+                                    <label for="exc-mileage">Пробіг</label>
+                                    <input type="text" id="exc-mileage" placeholder="Введіть пробіг авто">
+                                </div>
+                                <div class="ark-input-group">
+                                    <label for="exc-link">Посилання на авто (не обов'язково)</label>
+                                    <input type="text" id="exc-link" placeholder="Вставте посилання на авто">
+                                </div>
+                            </div>
+                            <div class="hapaiavto-red-btn estimate-submit-btn">
+                                <button type="submit">Запропонувати обмін</button>
+                            </div>
+                            <p class="ark-form-consent">Відправляючи форму, ви погоджуєтесь<br>на обробку персональних
+                                даних</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ark-modal ark-modal-consultation">
+        <div class="ark-overlay ark-overlay-consultation">
+            <div class="ark-popup ark-popup-consultation">
+                <div class="ark-popup-content ark-popup-content-consultation">
+                    <div class="ark-popup-close ark-popup-close-consultation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none">
+                            <circle cx="25" cy="25" r="25" fill="#F5F5F5" />
+                            <path stroke="#FE6034" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.333"
+                                d="m30.773 19.223-11.549 11.55M19.227 19.223l11.549 11.55" />
+                        </svg>
+                    </div>
+                    <div class="ark-popup-header">
+                        <h2 class="ark-popup-title">Отримати консультацію</h2>
+                        <p class="ark-popup-subtitle">Заповніть форму та наш менеджер<br>зв'яжеться з вами найближчим
+                            часом</p>
+                    </div>
+                    <div class="ark-popup-body">
+                        <form action="#" class="ark-popup-form">
+                            <div class="ark-form-row">
+                                <div class="ark-input-group">
+                                    <label for="con-name">Ім'я<span>*</span></label>
+                                    <input type="text" id="con-name" placeholder="Ваше Ім'я">
+                                </div>
+                            </div>
+                            <div class="ark-form-row">
+                                <div class="ark-input-group">
+                                    <label for="con-phone">Номер телефону<span>*</span></label>
+                                    <div class="ark-phone-input">
+                                        <div class="ark-phone-prefix">
+                                            <span>UA</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"
+                                                viewBox="0 0 10 6" fill="none">
+                                                <path d="M1 1L5 5L9 1" stroke="#535353" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <input type="tel" id="con-phone" value="+380 " placeholder="Введіть номер">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hapaiavto-red-btn estimate-submit-btn">
+                                <button type="submit">Отримати консультацію</button>
+                            </div>
+                            <p class="ark-form-consent">Відправляючи форму, ви погоджуєтесь<br>на обробку персональних
+                                даних</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ark-modal ark-modal-leave-request">
+        <div class="ark-overlay ark-overlay-leave-request">
+            <div class="ark-popup ark-popup-leave-request">
+                <div class="ark-popup-content ark-popup-content-leave-request">
+                    <div class="ark-popup-close ark-popup-close-leave-request">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none">
+                            <circle cx="25" cy="25" r="25" fill="#F5F5F5" />
+                            <path stroke="#FE6034" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.333"
+                                d="m30.773 19.223-11.549 11.55M19.227 19.223l11.549 11.55" />
+                        </svg>
+                    </div>
+                    <div class="ark-popup-header">
+                        <h2 class="ark-popup-title">Залишити заявку</h2>
+                        <p class="ark-popup-subtitle">Заповніть форму та наш менеджер зв'яжеться<br> з вами найближчим
+                            часом</p>
+                    </div>
+                    <div class="ark-popup-body">
+
+                        <div class="ark-inspection-step ark-step-1 active">
+                            <div class="ark-step-indicator">
+                                <h3 class="ark-inspection-step-title">Що вас цікавить?</h3>
+                                <div class="ark-step-group">
+                                    <div class="ark-step-text">Крок 1/2</div>
+                                    <div class="ark-step-bars">
+                                        <div class="ark-step-bar active"></div>
+                                        <div class="ark-step-bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ark-checkbox-list">
+                                <label class="ark-radio-label selected">
+                                    <input type="radio" name="requestOption" value="buy" checked>
+                                    <div class="ark-radio-icon">
+                                        <img src="data:image/webp;base64,UklGRnwAAABXRUJQVlA4WAoAAAAQAAAABwAADwAAQUxQSD4AAAABR0AQCBobIYNHOSIifOVgE9tWnCsCB6uFbwQDVNSp0q9XePAQ0f8JOLS9ego6hvtP19TOFfwluIAr4MqbAFZQOCAYAAAAMAEAnQEqCAAQAAJAOCWkAANwAP77nMAA"
+                                            alt="HapaiAuto">
+                                    </div>
+                                    <div class="ark-radio-text">Купити авто</div>
+                                </label>
+                                <label class="ark-radio-label">
+                                    <input type="radio" name="requestOption" value="test-drive">
+                                    <div class="ark-radio-icon">
+                                        <img src="data:image/webp;base64,UklGRsYAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSIcAAAABgE5rexjpQQhCEIrwIQzCGAzC1KCfQWLQNRiEIAQhCM+fdBkiIgEip45W2crl4ypAGdqi1ug6ClyuYDuWF1UPHqHRbfzTzWFAjfcrDginnr/ltu6vz/PtPl13ftac65P3dKQNGPoDui00oOsfhFbSFZx6EsuEMrQ1bV1HAUr6yMJW+9CZAQAAVlA4IBgAAAAwAQCdASoQABAAAkA4JaQAA3AA/vucwAA="
+                                            alt="HapaiAuto">
+                                    </div>
+                                    <div class="ark-radio-text">Тест-драйв</div>
+                                </label>
+                                <label class="ark-radio-label">
+                                    <input type="radio" name="requestOption" value="exchange">
+                                    <div class="ark-radio-icon">
+                                        <img src="data:image/webp;base64,UklGRrwAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSH4AAAABgNBGkiQpIBSEhrAQGspCOAY3DKYZ9DI4CAuhIBSEgRD31ByGiJgAgLlKcw/aOL09A4jUysYMOLVGZOPJ0BoQ2Thfekx4fFzNSvUNR+59qeXNAW9v/1fqtXfe5PJvPR8wP3XPxg2M0sFq3IzSBZGNX6UZQKxGXUE7Xqm1JgBWUDggGAAAADABAJ0BKhAAEAACQDglpAADcAD++5zAAA=="
+                                            alt="HapaiAuto">
+                                    </div>
+                                    <div class="ark-radio-text">Обмін авто</div>
+                                </label>
+                            </div>
+                            <div class="hapaiavto-red-btn">
+                                <button type="button" class="btn-next-step">Далі</button>
+                            </div>
+                        </div>
+
+                        <div class="ark-inspection-step ark-step-2-buy" style="display: none;">
+                            <form action="#" class="ark-popup-form">
+                                <div class="ark-step-indicator">
+                                    <div class="ark-step-group">
+                                        <div class="ark-step-text">Крок 2/2</div>
+                                        <div class="ark-step-bars">
+                                            <div class="ark-step-bar active"></div>
+                                            <div class="ark-step-bar active"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ark-form-row column-layout">
+                                    <div class="ark-input-group">
+                                        <label for="req-name-buy">Ім'я<span>*</span></label>
+                                        <input type="text" id="req-name-buy" placeholder="Ваше Ім'я">
+                                    </div>
+                                    <div class="ark-input-group">
+                                        <label for="req-phone-buy">Номер телефону<span>*</span></label>
+                                        <div class="ark-phone-input">
+                                            <div class="ark-phone-prefix">
+                                                <span>UA</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"
+                                                    viewBox="0 0 10 6" fill="none">
+                                                    <path d="M1 1L5 5L9 1" stroke="#535353" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <input type="tel" id="req-phone-buy" value="+380 "
+                                                placeholder="Введіть номер">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hapaiavto-red-btn estimate-submit-btn">
+                                    <button type="submit">Надіслати заявку</button>
+                                </div>
+                                <p class="ark-form-consent">Відправляючи форму, ви погоджуєтесь<br>на обробку
+                                    персональних даних</p>
+                            </form>
+                        </div>
+
+                        <div class="ark-inspection-step ark-step-2-test-drive" style="display: none;">
+                            <form action="#" class="ark-popup-form">
+                                <div class="ark-step-indicator">
+                                    <div class="ark-step-group">
+                                        <div class="ark-step-text">Крок 2/2</div>
+                                        <div class="ark-step-bars">
+                                            <div class="ark-step-bar active"></div>
+                                            <div class="ark-step-bar active"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ark-form-row flexible-row">
+                                    <div class="ark-input-group">
+                                        <label for="req-name-td">Ім'я<span>*</span></label>
+                                        <input type="text" id="req-name-td" placeholder="Ваше Ім'я">
+                                    </div>
+                                    <div class="ark-input-group">
+                                        <label for="req-phone-td">Номер телефону<span>*</span></label>
+                                        <div class="ark-phone-input">
+                                            <div class="ark-phone-prefix">
+                                                <span>UA</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"
+                                                    viewBox="0 0 10 6" fill="none">
+                                                    <path d="M1 1L5 5L9 1" stroke="#535353" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <input type="tel" id="req-phone-td" value="+380 "
+                                                placeholder="Введіть номер">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ark-form-row test-drive-extra">
+                                    <div class="ark-input-group">
+                                        <label for="req-comment-td">Можете уточнити час та місто</label>
+                                        <textarea id="req-comment-td" placeholder="Коментар"></textarea>
+                                    </div>
+                                </div>
+                                <div class="hapaiavto-red-btn estimate-submit-btn">
+                                    <button type="submit">Надіслати заявку</button>
+                                </div>
+                                <p class="ark-form-consent">Відправляючи форму, ви погоджуєтесь<br>на обробку
+                                    персональних даних</p>
+                            </form>
+                        </div>
+
+                        <div class="ark-inspection-step ark-step-2-exchange" style="display: none;">
+                            <form action="#" class="ark-popup-form">
+                                <div class="ark-step-indicator">
+                                    <div class="ark-step-group">
+                                        <div class="ark-step-text">Крок 2/2</div>
+                                        <div class="ark-step-bars">
+                                            <div class="ark-step-bar active"></div>
+                                            <div class="ark-step-bar active"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ark-form-row flexible-row">
+                                    <div class="ark-input-group">
+                                        <label for="req-name-ex">Ім'я<span>*</span></label>
+                                        <input type="text" id="req-name-ex" placeholder="Ваше Ім'я">
+                                    </div>
+                                    <div class="ark-input-group">
+                                        <label for="req-phone-ex">Номер телефону<span>*</span></label>
+                                        <div class="ark-phone-input">
+                                            <div class="ark-phone-prefix">
+                                                <span>UA</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"
+                                                    viewBox="0 0 10 6" fill="none">
+                                                    <path d="M1 1L5 5L9 1" stroke="#535353" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <input type="tel" id="req-phone-ex" value="+380 "
+                                                placeholder="Введіть номер">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ark-form-row flexible-row">
+                                    <div class="ark-input-group">
+                                        <label for="req-make-ex">Марка та модель авто<span>*</span></label>
+                                        <input type="text" id="req-make-ex" placeholder="Введіть марку та модель">
+                                    </div>
+                                    <div class="ark-input-group">
+                                        <label for="req-year-ex">Рік випуску</label>
+                                        <input type="text" id="req-year-ex" placeholder="Введіть рік випуску авто">
+                                    </div>
+                                </div>
+                                <div class="ark-form-row flexible-row">
+                                    <div class="ark-input-group">
+                                        <label for="req-mileage-ex">Пробіг</label>
+                                        <input type="text" id="req-mileage-ex" placeholder="Введіть пробіг авто">
+                                    </div>
+                                    <div class="ark-input-group">
+                                        <label for="req-link-ex">Посилання на авто (не обов'язково)</label>
+                                        <input type="text" id="req-link-ex" placeholder="Вставте посилання на авто">
+                                    </div>
+                                </div>
+                                <div class="hapaiavto-red-btn estimate-submit-btn">
+                                    <button type="submit">Надіслати заявку</button>
+                                </div>
+                                <p class="ark-form-consent">Відправляючи форму, ви погоджуєтесь<br>на обробку
+                                    персональних даних</p>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ark-modal ark-modal-inspection">
+        <div class="ark-overlay ark-overlay-inspection">
+            <div class="ark-popup ark-popup-inspection">
+                <div class="ark-popup-content ark-popup-content-inspection">
+                    <div class="ark-popup-close ark-popup-close-inspection">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none">
+                            <circle cx="25" cy="25" r="25" fill="#F5F5F5" />
+                            <path stroke="#FE6034" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.333"
+                                d="m30.773 19.223-11.549 11.55M19.227 19.223l11.549 11.55" />
+                        </svg>
+                    </div>
+                    <div class="ark-popup-header">
+                        <h2 class="ark-popup-title">Замовити перевірку</h2>
+                        <p class="ark-popup-subtitle">Заповніть форму і ви зможете отримати детальну<br>інформацію по
+                            авто Toyota RAW4 2025</p>
+                    </div>
+                    <div class="ark-popup-body">
+
+                        <div class="ark-inspection-step ark-step-1 active">
+                            <div class="ark-step-indicator">
+                                <h3 class="ark-inspection-step-title">Оберіть, що бажаєте перевірити</h3>
+                                <div class="ark-step-group">
+                                    <div class="ark-step-text">Крок 1/2</div>
+                                    <div class="ark-step-bars">
+                                        <div class="ark-step-bar active"></div>
+                                        <div class="ark-step-bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ark-checkbox-list">
+                                <label class="ark-checkbox-label">
+                                    <input type="checkbox" name="inspectOption" value="diagnostics">
+                                    <div class="ark-checkbox-icon">
+
+                                        <img src="data:image/webp;base64,UklGRqgAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSGkAAAABcAiAjSQVYREG4RCCMAarsAY3CGcwCIsQhEMoQhByzzwKETEBp7ycZ3pTnosk/X8PEkCVbYby5UU9opYA3gAg22zxJKnee/e/YNt/92CcAKqs2VjXToujlDZqpRzxzxFjmqOcXaM2WwcAVlA4IBgAAAAwAQCdASoQABAAAkA4JaQAA3AA/vucwAA="
+                                            alt="HapaiAuto">
+                                    </div>
+                                    <div class="ark-checkbox-text">Комп'ютерна діагностика</div>
+                                </label>
+                                <label class="ark-checkbox-label">
+                                    <input type="checkbox" name="inspectOption" value="suspension">
+                                    <div class="ark-checkbox-icon">
+                                        <img src="data:image/webp;base64,UklGRq4AAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSHAAAAABcBDZbtwIgiEIgiGYQcKgghAGMYQwaBgYgqEIgiC8HrkRRMQEyP/Yg/6S/ZnNecdgqcsK05bTxqTW8Y1ElOxecqB/CtVaGya2JGJUq2oRsllhyaXCeys5Hu64bomuAF3loK4tyeESXo4Z2LMKkbcAVlA4IBgAAAAwAQCdASoQABAAAkA4JaQAA3AA/vucwAA="
+                                            alt="HapaiAuto">
+                                    </div>
+                                    <div class="ark-checkbox-text">Діагностика ходової</div>
+                                </label>
+                                <label class="ark-checkbox-label">
+                                    <input type="checkbox" name="inspectOption" value="vin">
+                                    <div class="ark-checkbox-icon">
+                                        <img src="data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSFwAAAABYEhtW50PIYQQQvgRMug3WAbLoEyGMIQhhBDC/bKNICImAMTLBJ83ff6escy/UNchlXcSOqrO56xdzkak/Nic+U7ZhBSDSDl2YAmQBhDA3fIrdu3MLm8GEC8TAFZQOCAYAAAAMAEAnQEqEAAQAAJAOCWkAANwAP77nMAA"
+                                            alt="HapaiAuto">
+                                    </div>
+                                    <div class="ark-checkbox-text">Перевірити історію по VIN</div>
+                                </label>
+                                <label class="ark-checkbox-label">
+                                    <input type="checkbox" name="inspectOption" value="paint">
+                                    <div class="ark-checkbox-icon">
+                                        <img src="data:image/webp;base64,UklGRqQAAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSGYAAAABcEhbbyZ9CEUIwiAEYRFqsDXYMdgaBGEQPoRBKEIQvv3NKETEBOCpYgCAyn7pJJClJuB2KJfOiIjxBRO7dsAfzPGr7dtM3h0/+waMo6FuhrKTpFdsScsqmNJEmRJrKeWlVesr+y9WUDggGAAAADABAJ0BKhAAEAACQDglpAADcAD++5zAAA=="
+                                            alt="HapaiAuto">
+                                    </div>
+                                    <div class="ark-checkbox-text">Перевірити лакофарбове покриття</div>
+                                </label>
+                            </div>
+                            <div class="hapaiavto-red-btn">
+                                <button type="button" class="btn-next-step">Далі</button>
+                            </div>
+                        </div>
+
+                        <div class="ark-inspection-step ark-step-2">
+                            <form action="#" class="ark-popup-form">
+                                <div class="ark-step-indicator">
+                                    <div class="ark-step-group">
+                                        <div class="ark-step-text">Крок 2/2</div>
+                                        <div class="ark-step-bars">
+                                            <div class="ark-step-bar active"></div>
+                                            <div class="ark-step-bar active"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ark-form-row">
+                                    <div class="ark-input-group">
+                                        <label for="ins-name">Ім'я<span>*</span></label>
+                                        <input type="text" id="ins-name" placeholder="Ваше Ім'я">
+                                    </div>
+                                </div>
+                                <div class="ark-form-row">
+                                    <div class="ark-input-group">
+                                        <label for="ins-phone">Номер телефону<span>*</span></label>
+                                        <div class="ark-phone-input">
+                                            <div class="ark-phone-prefix">
+                                                <span>UA</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"
+                                                    viewBox="0 0 10 6" fill="none">
+                                                    <path d="M1 1L5 5L9 1" stroke="#535353" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <input type="tel" id="ins-phone" value="+380 " placeholder="Введіть номер">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hapaiavto-red-btn estimate-submit-btn">
+                                    <button type="submit">Замовити</button>
+                                </div>
+                                <p class="ark-form-consent">Відправляючи форму, ви погоджуєтесь<br>на обробку
+                                    персональних
+                                    даних</p>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ark-modal ark-modal-simple-request">
+        <div class="ark-overlay ark-overlay-simple-request">
+            <div class="ark-popup ark-popup-consultation">
+                <div class="ark-popup-content ark-popup-content-consultation">
+                    <div class="ark-popup-close ark-popup-close-simple-request">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none">
+                            <circle cx="25" cy="25" r="25" fill="#F5F5F5" />
+                            <path stroke="#FE6034" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.333"
+                                d="m30.773 19.223-11.549 11.55M19.227 19.223l11.549 11.55" />
+                        </svg>
+                    </div>
+                    <div class="ark-popup-header">
+                        <h2 class="ark-popup-title">Залиште заявку</h2>
+                        <p class="ark-popup-subtitle">Заповніть форму та наш менеджер<br>зв'яжеться з вами найближчим
+                            часом</p>
+                    </div>
+                    <div class="ark-popup-body">
+                        <form action="#" class="ark-popup-form">
+                            <div class="ark-form-row">
+                                <div class="ark-input-group">
+                                    <label for="sr-name">Ім'я<span>*</span></label>
+                                    <input type="text" id="sr-name" placeholder="Ваше Ім'я">
+                                </div>
+                            </div>
+                            <div class="ark-form-row">
+                                <div class="ark-input-group">
+                                    <label for="sr-phone">Номер телефону<span>*</span></label>
+                                    <div class="ark-phone-input">
+                                        <div class="ark-phone-prefix">
+                                            <span>UA</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"
+                                                viewBox="0 0 10 6" fill="none">
+                                                <path d="M1 1L5 5L9 1" stroke="#535353" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <input type="tel" id="sr-phone" value="+380 " placeholder="Введіть номер">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hapaiavto-red-btn estimate-submit-btn">
+                                <button type="submit">Залишити заявку</button>
+                            </div>
+                            <p class="ark-form-consent">Відправляючи форму, ви погоджуєтесь<br>на обробку персональних
+                                даних</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ark-modal ark-modal-callback">
+        <div class="ark-overlay ark-overlay-callback">
+            <div class="ark-popup ark-popup-consultation">
+                <div class="ark-popup-content ark-popup-content-consultation">
+                    <div class="ark-popup-close ark-popup-close-callback">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none">
+                            <circle cx="25" cy="25" r="25" fill="#F5F5F5" />
+                            <path stroke="#FE6034" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.333"
+                                d="m30.773 19.223-11.549 11.55M19.227 19.223l11.549 11.55" />
+                        </svg>
+                    </div>
+                    <div class="ark-popup-header">
+                        <h2 class="ark-popup-title">Зв'яжемося з Вами<br>протягом 30 хв</h2>
+                        <p class="ark-popup-subtitle">Заповніть форму та наш менеджер<br>зв'яжеться з вами найближчим
+                            часом</p>
+                    </div>
+                    <div class="ark-popup-body">
+                        <form action="#" class="ark-popup-form">
+                            <div class="ark-form-row">
+                                <div class="ark-input-group">
+                                    <label for="cb-phone">Номер телефону<span>*</span></label>
+                                    <div class="ark-phone-input">
+                                        <div class="ark-phone-prefix">
+                                            <span>UA</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"
+                                                viewBox="0 0 10 6" fill="none">
+                                                <path d="M1 1L5 5L9 1" stroke="#535353" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <input type="tel" id="cb-phone" value="+380 " placeholder="Введіть номер">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hapaiavto-red-btn estimate-submit-btn">
+                                <button type="submit">Відправити</button>
+                            </div>
+                            <p class="ark-form-consent">Відправляючи форму, ви погоджуєтесь<br>на обробку персональних
+                                даних</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="ark-float-btn callback-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <path
+                d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01L6.62 10.79Z"
+                fill="#fff" />
+        </svg>
+    </button>
+
+    <div class="tel-menu">
+        <div class="tel-menu-wrapper">
+
+            <div class="tel-menu-top">
+                <div class="container">
+                    <div class="tel-menu-top-wrapper">
+                        <a href="#">
+                            <img src="./img/header-logo.svg" alt="HapaiAuto">
+                        </a>
+                        <button class="tel-menu-close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="none">
+                                <circle cx="23" cy="23" r="23" fill="#fff" />
+                                <path stroke="#FF4800" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M29 17 17 29M17 17l12 12" /></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tel-menu-bottom">
+                <div class="container">
+                    <div class="tel-menu-bottom-wrapper">
+                        <nav class="tel-menu-icons">
+                            <ul>
+                                <li>
+                                    <img src="data:image/webp;base64,UklGRugAAABXRUJQVlA4WAoAAAAQAAAAHQAAFwAAQUxQSJUAAAABYFBbaxYiEGERFsEIRrCBayANtIERjGCERSCCEX45H9AgItC2bRsZ2oo6yRkE0283AllzLr4ndPZVRtT7Zyp/1FiQdhKBdRXJVljXCHHeH4etixYqo7rNL9SC6jp0tL8PX8bI7xc8cKgQESjEBgo3/WM3MRHyM+DTBmgfO8U57ls5Qb+1JGR8vdDLRhlEKMVKOTgOAQBWUDggLAAAANACAJ0BKh4AGAA+hTSTSAN+gAoBCJaQAArG5pF0VgAA/vlYff/ygYv7KdAA"
+                                        alt="HapaiAuto">
+                                    <a href="#">Купити авто</a>
+                                </li>
+                                <li>
+                                    <img src="data:image/webp;base64,UklGRuoAAABXRUJQVlA4WAoAAAAQAAAAFAAAFQAAQUxQSKAAAAABcI5te1A9CEP4EEIYQgZl0AxOCBmcDEL4EEL4EIbw/tjWFCJiAhgvvyo3PqfD1dZ4t9FWJclvtaVn6i68Te3dvedQNzcpemNvdk0nICTVf7nqqMAqSQY8oxNcUpA8LSPD1GbO5xg43JLi8o2i4YZJ0ssaC9EL2BsVwNTfIDqR9zN61UDzf8DnDMhTTpt9InfA7i8XH62EpNjPzOR+HokxVlA4ICQAAABwAgCdASoVABYAPp1Kn0sCgIALATiWkAAD2joAAP73HAAAAAA="
+                                        alt="HapaiAuto">
+                                    <a href="#">Продати авто</a>
+                                </li>
+                                <li>
+                                    <img src="data:image/webp;base64,UklGRv4AAABXRUJQVlA4WAoAAAAQAAAAFwAAFwAAQUxQSLQAAAABcFZba9h8EiIBCXXUOWgcNBLmYHUwCUioBCQg4f1owqmEiJgAzdvpAemHqWxO8WeFIylnX5wAGSs4JwdAbhYFuiRLIDfJopAmXUBukmSxwmVAbpparGgd+I/RJH3GVRjO1CR5RkTMPEsuyWbBW+sX4q30WURElnzMgO/YJbUxbqC3wt003QFMvuJujx3gJ1muuJu0A6RJ6gXutvPseo4CwXNo3nP1zK61XRU3le3whPDRNAdWUDggJAAAAHACAJ0BKhgAGAA+nUqfSwKAgAsBOJaQAAPaOgAA/vccAAAAAA=="
+                                        alt="HapaiAuto">
+                                    <a href="#">Trade-in</a>
+                                </li>
+                                <li>
+                                    <img src="data:image/webp;base64,UklGRpgAAABXRUJQVlA4WAoAAAAQAAAACwAAFwAAQUxQSEwAAAABP0AgQJlkAROa4JmICMGdFWxj24ryiEiJ6IAaLMEONN5Nd2//w1pCRP8nwG3QmQnAP9GIlc4jQcs/8UX9FHn3wGAkkKpCQkUUqYgcVlA4ICYAAAAwAgCdASoMABgAPp0oo04BgAsBOJaQAAflwAD+9yA+j//6fQAAAA=="
+                                        alt="HapaiAuto">
+                                    <a href="#">Реалізація авто</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <hr>
+                        <nav class="tel-menu-simple">
+                            <ul>
+                                <li>
+                                    <a href="#">Фінансування</a>
+                                </li>
+                                <li>
+                                    <a href="#">Про нас</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакти</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="hapaiavto-red-btn">
+                            <a href="#">067 341 89 64</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery-4.0.0.min.js"></script>
+    <script src="./js/maskedinput.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
