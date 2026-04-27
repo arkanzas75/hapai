@@ -626,6 +626,9 @@ window.addEventListener('load', function () {
     // Reset all steps first
     $modal.find(".ark-step-1, .ark-step-2-buy, .ark-step-2-test-drive, .ark-step-2-exchange").hide().removeClass("active");
 
+    // Reset indicator visibility
+    $modal.find(".ark-step-indicator").css('display', '');
+
     // Check if button is in hapaiavto-single-top-bar
     if ($button.closest('.hapaiavto-single-top-bar').length > 0) {
       // Open directly on step 2 with "buy" option
@@ -637,6 +640,11 @@ window.addEventListener('load', function () {
 
       // Pre-select "buy" radio button
       $modal.find('input[name="requestOption"][value="buy"]').prop('checked', true);
+
+      // Hide step indicator if button is in hapaiavto-single-top-right
+      if ($button.closest('.hapaiavto-single-top-right').length > 0) {
+        $modal.find(".ark-step-indicator").hide();
+      }
     } else {
       // Show step 1 for other buttons
       $modal.find(".ark-step-1").show().addClass("active");

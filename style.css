@@ -217,6 +217,7 @@ ol {
 
 .hapaiavto-shop-cities li img {
     transition: filter 0.3s ease;
+    max-width: 27px;
 }
 
 .hapaiavto-shop-cities li span {
@@ -1097,7 +1098,7 @@ div.seo-text-section.ark-content-block {
     padding: 8px 10px 8px 30px;
     margin-bottom: 40px;
     position: sticky;
-    top: 100px;
+    top: 93px;
     z-index: 99;
 }
 
@@ -1127,7 +1128,7 @@ div.seo-text-section.ark-content-block {
 .hapaiavto-single-top-right {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 8px;
 }
 
 .hapaiavto-single-phone {
@@ -1322,7 +1323,7 @@ div.seo-text-section.ark-content-block {
 .hapaiavto-estimated-payment {
     background: linear-gradient(30.85deg, #FF4800 -66.36%, #000000 89.88%);
     border-radius: 24px;
-    padding: 25px;
+    padding: 32px;
     margin-top: 40px;
 }
 
@@ -1583,6 +1584,7 @@ div.seo-text-section.ark-content-block {
 .hapaiavto-overview-sect h2 {
     font-size: 46px;
     line-height: 100%;
+    font-weight: 400;
     margin-bottom: 5px;
 }
 
@@ -3063,7 +3065,20 @@ input[type="radio"]::before {
 
     .footer-top {
         grid-template-columns: 49% 49%;
-        gap: 2%;
+        gap: 0 2%;
+    }
+
+    .footer-col-title {
+        margin-bottom: 10px;
+    }
+
+    .footer-menu-1,
+    .footer-menu-2 {
+        margin-bottom: 80px;
+    }
+
+    .footer-col-contacts {
+        margin-bottom: 25px;
     }
 
     .footer-box {
@@ -3081,7 +3096,7 @@ input[type="radio"]::before {
 
     .hapaiavto-single-top-bar {
         padding: 6px 6px 6px 16px;
-        top: 20px;
+        top: 10px;
         margin-bottom: 20px;
     }
 
