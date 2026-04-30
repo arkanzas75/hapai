@@ -1254,6 +1254,18 @@ div.seo-text-section.ark-content-block {
 
 .hapaiavto-single-price-wrap {
     margin-bottom: 45px;
+    display: flex;
+    align-items: center;
+    gap: 10px 15px;
+    flex-wrap: wrap;
+}
+
+.hapaiavto-single-price-second-currency {
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0%;
+color: #8C8C8C;
 }
 
 .hapaiavto-single-price {
@@ -2351,16 +2363,14 @@ input[type="radio"]::before {
 .tel-menu {
     width: 100%;
     height: 100vh;
-    position: relative;
-    z-index: 99;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 999;
-    overflow: hidden;
-    transform: translateY(-100%);
-    transition: all 0.2s ease;
-    background: #fff;
+    z-index: 1000000;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .showNav {
@@ -2370,17 +2380,49 @@ input[type="radio"]::before {
     z-index: 999999;
 }
 
+.tel-menu.showNav {
+    visibility: visible;
+    opacity: 1;
+}
+
 .tel-menu-wrapper {
     overflow: auto;
-    height: 100vh;
-    max-height: 100vh;
+    height: auto;
+    max-height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
+    margin: 25px 15px;
+    width: calc(100% - 30px);
+    background: linear-gradient(179.67deg, #FF4800 -18.81%, #832500 38.74%, #000000 99.71%);
+    border-radius: 20px;
+    transform: translateY(-150%);
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 576px) {
+    .tel-menu-wrapper {
+        margin: 15px;
+        max-height: calc(100vh - 30px);
+    }
+}
+
+.tel-menu.showNav .tel-menu-wrapper {
+    transform: translateY(0);
+}
+
+.tel-menu-top .container {
+    padding: 0;
 }
 
 .tel-menu-top {
-    background: linear-gradient(55.74deg, #FF4800 -187.95%, #000000 87.42%);
-    padding: 65px 0 15px 0;
+    background: linear-gradient(53.73deg, #FF4800 -140.45%, #000000 87.8%);
+    padding: 8px 30px 8px 10px;
+}
+
+@media (max-width: 576px) {
+    .tel-menu-top {
+        padding: 15px 20px;
+    }
 }
 
 .tel-menu-top-wrapper {
@@ -2440,6 +2482,25 @@ input[type="radio"]::before {
 .hapaiavto-single-info.hapaiavto-single-info-mob,
 .hapaiavto-faq-contact-mob {
     display: none;
+}
+
+.find-us-map-btn {
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+}
+
+.find-us-map-btn a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    padding: 13px 24px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
 }
 
 
@@ -2502,8 +2563,7 @@ input[type="radio"]::before {
         margin-bottom: 45px;
     }
 
-    .hapaiavto-shop-showcase aside,
-    .hapaiavto-shop-sort-wrapper {
+    .hapaiavto-shop-showcase aside {
         width: 100%;
         height: 100vh;
         position: relative;
@@ -2518,15 +2578,31 @@ input[type="radio"]::before {
         background: #fff;
     }
 
-    .hapaiavto-shop-sort-wrapper {
-        transform: translateX(200%);
-    }
-
-    .hapaiavto-shop-showcase aside.showNav,
-    .hapaiavto-shop-sort-wrapper.showNav {
+    .hapaiavto-shop-showcase aside.showNav {
         transform: translateX(0);
         top: 0;
         opacity: 1;
+        z-index: 999999;
+    }
+
+    .hapaiavto-shop-sort-wrapper {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: flex-end;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .hapaiavto-shop-sort-wrapper.showNav {
+        opacity: 1;
+        visibility: visible;
         z-index: 999999;
     }
 
@@ -2654,9 +2730,18 @@ input[type="radio"]::before {
     }
 
     .hapaiavto-shop-sort-block {
+        width: 100%;
+        background: #fff;
+        border-radius: 20px 20px 0 0;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
         overflow: auto;
-        max-height: 100vh;
-        padding: 15px;
+        max-height: 90vh;
+        padding: 20px 15px 30px 15px;
+    }
+
+    .hapaiavto-shop-sort-wrapper.showNav .hapaiavto-shop-sort-block {
+        transform: translateY(0);
     }
 
     .hapaiavto-shop-info-sort form>span,
@@ -2938,12 +3023,14 @@ input[type="radio"]::before {
         font-size: 24px;
         line-height: 100%;
         margin: 0;
+        margin-top: -30px;
     }
 
     .hapaiavto-single-price-wrap {
         grid-area: hapaiavto-single-price-wrap;
         text-align: right;
         margin: 0;
+        justify-content: flex-end;
     }
 
     .hapaiavto-single-specs {
@@ -2990,14 +3077,17 @@ input[type="radio"]::before {
     }
 
     .main-header {
-        position: static;
+        position: sticky;
+        top: 15px;
+        z-index: 99999;
         margin: 0;
-        background: linear-gradient(53.73deg, #FF4800 -140.45%, #000000 87.8%);
+        background: transparent;
     }
 
     .main-header-wrapper {
-        padding: 15px 0;
-        background: none;
+        padding: 15px 20px;
+        background: linear-gradient(53.73deg, #FF4800 -140.45%, #000000 87.8%);
+        border-radius: 100px;
     }
 
     .hapaiavto-shop-cities {
@@ -3335,6 +3425,20 @@ input[type="radio"]::before {
 
     .mob-filters-btns {
         margin-left: 55px;
+    }
+
+    .find-us-map-btn {
+        margin: 0;
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .find-us-map-btn a {
+        width: max-content;
+        margin: 0 auto;
     }
 
 }

@@ -18,6 +18,13 @@ window.addEventListener('load', function () {
     $("body").toggleClass("no-scroll");
   });
 
+  $(".hapaiavto-shop-sort-wrapper").on("click", function (e) {
+    if (e.target === this) {
+      $(this).removeClass("showNav");
+      $("body").removeClass("no-scroll");
+    }
+  });
+
   // City tabs
   $(".hapaiavto-shop-cities li").on("click", function () {
     $(".hapaiavto-shop-cities li").removeClass("hapaiavto-shop-city-active");
@@ -53,11 +60,11 @@ window.addEventListener('load', function () {
 
     for (let i = 1; i < selectOptionLength; i++) {
       $('<div>', {
-          class: 'new-select__item',
-          html: $('<span>', {
-            text: $selectOption.eq(i).text()
-          })
+        class: 'new-select__item',
+        html: $('<span>', {
+          text: $selectOption.eq(i).text()
         })
+      })
         .attr('data-value', $selectOption.eq(i).val())
         .appendTo($selectList);
     }
@@ -225,13 +232,13 @@ window.addEventListener('load', function () {
   const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v12',
-    zoom: 12,
+    zoom: 16,
     center: initialCenter,
   });
 
   map.on('load', () => {
     map.loadImage(
-      window.location.origin + '/img/marker.png',
+      'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAAB1CAMAAACbD+j8AAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAABtQTFRFR3BM/0AA/0gA/0YA/0cA/0gA/0cA/0gA/0gA8n30UwAAAAh0Uk5TABAgNGCFv+MFsvrCAAABeElEQVR42u2ZO5LEMAhE2+Ij3//EGxKtCVQM7RlebhdB9xNV4Iy17woMR1w1UznO8LuCfeEIq5lqfeNUepegnCX8SjU4oxquKWF7CQVHyKjh5VOhSg3zPo8a3qUGe6RDDfmvrUkNnkzVsLqnv9YGNeS/lgY15L9eu6mEmnzIWEKvXN1r1OCjhlHDqGHUMGpI4q6UJZSu1V3ep4br99QAp1SD1ahhjRoQrD1qGDV8XA1dq7vN6s6xukvR6j63+rnVzy1gbvWjhlHDL5dwH6/uU8K51c+tfm713Lf6QPQB+79l+gwqsaLuF5nD0cpO1oIeJOl+E1rQ/bLEG5pxyqnAVMJAmOIeWDIVT7QUjGMZ+rkop4IwvTmBJXEniZaAgk1UwmAlcadYHxwkGFPcA6ecCjuJe79MDTQo5VQwpjcn2Encu9cHARESJWTCCOMeMnVwsaOERKwoIRMacadLvIENj6nIEu+gQyLuTCjlVLBbQYgbGHEwstrfnD+9WrxLIpuJMgAAAABJRU5ErkJggg==',
       (error, image) => {
         if (error) {
           console.warn('Mapbox marker image not found', error);
@@ -298,7 +305,7 @@ window.addEventListener('load', function () {
             const center = JSON.parse(centerStr);
             map.flyTo({
               center: center,
-              zoom: 12,
+              zoom: 16,
               speed: 1.2
             });
 
@@ -346,7 +353,7 @@ window.addEventListener('load', function () {
         const center = JSON.parse(centerStr);
         map.flyTo({
           center: center,
-          zoom: 12,
+          zoom: 16,
           speed: 1.2
         });
 
