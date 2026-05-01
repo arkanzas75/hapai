@@ -2488,6 +2488,7 @@ input[type="radio"]::before {
     position: absolute;
     right: 0;
     bottom: 40px;
+    pointer-events: auto;
 }
 
 .find-us-map-btn a {
