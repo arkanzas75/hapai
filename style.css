@@ -190,6 +190,8 @@ ol {
     display: inline-block;
     vertical-align: middle;
     margin-left: 20px;
+    height: 52px;
+    width: auto;
 }
 
 .hapaiavto-shop h1 span {
@@ -1128,7 +1130,7 @@ div.seo-text-section.ark-content-block {
 .hapaiavto-single-top-right {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 24px;
 }
 
 .hapaiavto-single-phone {
@@ -1261,11 +1263,11 @@ div.seo-text-section.ark-content-block {
 }
 
 .hapaiavto-single-price-second-currency {
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-letter-spacing: 0%;
-color: #8C8C8C;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #8C8C8C;
 }
 
 .hapaiavto-single-price {
@@ -1659,6 +1661,23 @@ color: #8C8C8C;
 .hapaiavto-overview-img-car {
     position: relative;
     z-index: 9;
+    width: 100%;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Стилі для model-viewer */
+model-viewer.hapaiavto-overview-img-car {
+    width: 100%;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+    --poster-color: transparent;
+}
+
+model-viewer.hapaiavto-overview-img-car::part(default-progress-bar) {
+    display: none;
 }
 
 .hapaiavto-overview-img-360 {
@@ -1922,7 +1941,7 @@ color: #8C8C8C;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.75);
-    z-index: 999;
+    z-index: 99999;
     backdrop-filter: blur(4px);
 }
 
@@ -2358,6 +2377,7 @@ input[type="radio"]::before {
 
 .tel-menu-btn {
     cursor: pointer;
+    display: flex;
 }
 
 .tel-menu {
@@ -2399,13 +2419,6 @@ input[type="radio"]::before {
     transition: transform 0.3s ease;
 }
 
-@media (max-width: 576px) {
-    .tel-menu-wrapper {
-        margin: 15px;
-        max-height: calc(100vh - 30px);
-    }
-}
-
 .tel-menu.showNav .tel-menu-wrapper {
     transform: translateY(0);
 }
@@ -2417,12 +2430,6 @@ input[type="radio"]::before {
 .tel-menu-top {
     background: linear-gradient(53.73deg, #FF4800 -140.45%, #000000 87.8%);
     padding: 8px 30px 8px 10px;
-}
-
-@media (max-width: 576px) {
-    .tel-menu-top {
-        padding: 15px 20px;
-    }
 }
 
 .tel-menu-top-wrapper {
@@ -2502,6 +2509,147 @@ input[type="radio"]::before {
     align-items: center;
     gap: 5px;
     justify-content: center;
+}
+
+.model-loading-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.model-loading-indicator .spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(255, 72, 0, 0.1);
+    border-top-color: #FF4800;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.model-loading-indicator p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.model-viewer-controls {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hapaiavto-overview-img:hover .model-viewer-controls {
+    opacity: 1;
+}
+
+.model-control-btn {
+    transition: all 0.3s ease;
+}
+
+.model-control-btn:hover {
+    background: #e63f00 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.model-control-btn:active {
+    transform: translateY(0);
+}
+
+
+
+.tiktok-li {
+    position: relative;
+}
+
+.tiktok-dropdown {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: #FFFFFF;
+    border-radius: 100px;
+    padding: 0 0 6px 0;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 52px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.tiktok-dropdown.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: all;
+}
+
+.tiktok-dropdown-close {
+    cursor: pointer;
+    width: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.tiktok-dropdown-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.tiktok-li.is-active .tiktok-icon-btn {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.tiktok-dropdown-item {
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.tiktok-dropdown-item:hover {
+    transform: scale(1.05);
+}
+
+.tiktok-dropdown-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    text-align: center;
+    overflow: hidden;
+}
+
+.tiktok-dropdown-circle img {
+    width: 100%;
+    display: block;
+}
+
+.tiktok-dropdown-circle span {
+    font-size: 11px;
+    line-height: 1;
+    font-weight: 500;
+    font-family: Road UI, sans-serif;
+}
+
+.footer-col-social {
+    position: relative;
 }
 
 
@@ -3068,6 +3216,10 @@ input[type="radio"]::before {
         margin: 0 auto;
     }
 
+    model-viewer.hapaiavto-overview-img-car {
+        height: 350px;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -3086,8 +3238,9 @@ input[type="radio"]::before {
     }
 
     .main-header-wrapper {
-        padding: 15px 20px;
+        padding: 7px 5px 7px 20px;
         background: linear-gradient(53.73deg, #FF4800 -140.45%, #000000 87.8%);
+        background: #242424E6;
         border-radius: 100px;
     }
 
@@ -3096,7 +3249,7 @@ input[type="radio"]::before {
     }
 
     .hapaiavto-shop-sect {
-        padding: 30px 0 60px 0;
+        padding: 55px 0 60px 0;
     }
 
     .hapaiavto-shop-showcase-list {
@@ -3174,6 +3327,7 @@ input[type="radio"]::before {
 
     .footer-box {
         padding: 40px 30px 30px 30px;
+        overflow: visible;
     }
 
     .main-footer {
@@ -3187,7 +3341,7 @@ input[type="radio"]::before {
 
     .hapaiavto-single-top-bar {
         padding: 6px 6px 6px 16px;
-        top: 10px;
+        top: 85px;
         margin-bottom: 20px;
     }
 
@@ -3440,6 +3594,19 @@ input[type="radio"]::before {
     .find-us-map-btn a {
         width: max-content;
         margin: 0 auto;
+    }
+
+    .tel-menu-top {
+        padding: 15px 20px;
+    }
+
+    .tel-menu-wrapper {
+        margin: 15px;
+        max-height: calc(100vh - 30px);
+    }
+
+    model-viewer.hapaiavto-overview-img-car {
+        height: 280px;
     }
 
 }

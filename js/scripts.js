@@ -60,11 +60,11 @@ window.addEventListener('load', function () {
 
     for (let i = 1; i < selectOptionLength; i++) {
       $('<div>', {
-        class: 'new-select__item',
-        html: $('<span>', {
-          text: $selectOption.eq(i).text()
+          class: 'new-select__item',
+          html: $('<span>', {
+            text: $selectOption.eq(i).text()
+          })
         })
-      })
         .attr('data-value', $selectOption.eq(i).val())
         .appendTo($selectList);
     }
@@ -776,5 +776,25 @@ window.addEventListener('load', function () {
       }
     });
   }
+
+  // TikTok Dropdown Toggle
+  $('.tiktok-icon-btn').on('click', function (e) {
+    e.preventDefault();
+    $('.tiktok-li').addClass('is-active');
+    $('.tiktok-dropdown').addClass('active');
+  });
+
+  $('.tiktok-dropdown-close').on('click', function () {
+    $('.tiktok-li').removeClass('is-active');
+    $('.tiktok-dropdown').removeClass('active');
+  });
+
+  $(document).on('click', function (e) {
+    if (!$(e.target).closest('.tiktok-li').length) {
+      $('.tiktok-li').removeClass('is-active');
+      $('.tiktok-dropdown').removeClass('active');
+    }
+  });
+
 
 }, false);
