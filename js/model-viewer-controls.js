@@ -35,25 +35,33 @@ document.addEventListener('DOMContentLoaded', function () {
         // modelViewer.autoRotate = true;
     });
 
-    if (window.innerWidth <= 768) {
-        // Можна змінити параметри для мобільних
-        modelViewer.setAttribute('camera-orbit', '45deg 85deg 3m');
-        modelViewer.setAttribute('min-camera-orbit', 'auto 85deg auto');
-        modelViewer.setAttribute('max-camera-orbit', 'auto 85deg auto');
+    // Параметри камери залежно від ширини екрана.
+    // На вузьких екранах відсуваємо камеру далі, щоб довге авто
+    // не виходило за краї рамки під час автообертання.
+    function getOrbitSettings() {
+        const width = window.innerWidth;
+        // На мобільних і планшетах використовуємо radius "auto" — model-viewer
+        // сам підбирає відстань, щоб усе авто вміщалося в рамку й не обрізалось.
+        if (width <= 768) {
+            return { phi: '85deg', radius: 'auto' };
+        }
+        if (width <= 992) {
+            return { phi: '75deg', radius: 'auto' };
+        }
+        return { phi: '75deg', radius: '2.5m' };
     }
 
+    function applyOrbitSettings() {
+        const { phi, radius } = getOrbitSettings();
+        modelViewer.setAttribute('camera-orbit', `45deg ${phi} ${radius}`);
+        modelViewer.setAttribute('min-camera-orbit', `auto ${phi} auto`);
+        modelViewer.setAttribute('max-camera-orbit', `auto ${phi} auto`);
+    }
+
+    applyOrbitSettings();
+
     // Обробка зміни розміру вікна
-    window.addEventListener('resize', function () {
-        if (window.innerWidth <= 768) {
-            modelViewer.setAttribute('camera-orbit', '45deg 85deg 3m');
-            modelViewer.setAttribute('min-camera-orbit', 'auto 85deg auto');
-            modelViewer.setAttribute('max-camera-orbit', 'auto 85deg auto');
-        } else {
-            modelViewer.setAttribute('camera-orbit', '45deg 75deg 2.5m');
-            modelViewer.setAttribute('min-camera-orbit', 'auto 75deg auto');
-            modelViewer.setAttribute('max-camera-orbit', 'auto 75deg auto');
-        }
-    });
+    window.addEventListener('resize', applyOrbitSettings);
 
     // Додавання індикатора завантаження (опціонально)
     const loadingIndicator = document.createElement('div');
@@ -74,6 +82,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const parentElement = modelViewer.parentElement;
     parentElement.style.position = 'relative';
     parentElement.appendChild(loadingIndicator);
+
+    // Якщо модель уже завантажилась до цього моменту — ховаємо індикатор одразу
+    if (modelViewer.loaded) {
+        loadingIndicator.style.display = 'none';
+    }
 
     // Видаляємо індикатор після завантаження
     modelViewer.addEventListener('load', function () {
@@ -125,8 +138,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (resetCameraBtn) {
         resetCameraBtn.addEventListener('click', function () {
-            const phi = window.innerWidth <= 768 ? '85deg' : '75deg';
-            const radius = window.innerWidth <= 768 ? '3m' : '2.5m';
+            const { phi, radius } = getOrbitSettings();
             modelViewer.cameraOrbit = `45deg ${phi} ${radius}`;
         });
     }
