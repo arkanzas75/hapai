@@ -304,10 +304,12 @@
                 <div class="hapaiavto-overview-img">
                     <model-viewer class="hapaiavto-overview-img-car" src="./models/aston_martin_db11.glb"
                         ios-src="./models/Aston_Martin_DB11.usdz" alt="Aston Martin DB11 3D Model" auto-rotate
-                        camera-controls disable-zoom shadow-intensity="1" exposure="1" camera-orbit="45deg 75deg 2.5m"
-                        min-camera-orbit="auto 75deg auto" max-camera-orbit="auto 75deg auto" interaction-prompt="auto"
-                        ar ar-modes="webxr scene-viewer quick-look" loading="eager">
+                        camera-controls disable-zoom disable-tap disable-pan shadow-intensity="1" exposure="1"
+                        bounds="tight" field-of-view="45deg" camera-orbit="45deg 75deg 3.7m"
+                        min-camera-orbit="auto 75deg auto" max-camera-orbit="auto 75deg 6m" camera-target="0m 0.3m 0m"
+                        interaction-prompt="auto" ar ar-modes="webxr scene-viewer quick-look" loading="eager">
                     </model-viewer>
+
                     <img class="hapaiavto-overview-img-circle"
                         src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='990' height='161' fill='none'%3E%3Cpath stroke='%23fff' stroke-width='1.833' d='M495 .917c136.657 0 260.356 8.976 349.871 23.48 44.765 7.254 80.939 15.884 105.901 25.447 12.486 4.783 22.113 9.78 28.602 14.918 6.503 5.15 9.709 10.32 9.709 15.446s-3.205 10.296-9.709 15.446c-6.489 5.139-16.116 10.136-28.602 14.919-24.962 9.563-61.136 18.193-105.901 25.447C755.356 150.524 631.657 159.5 495 159.5s-260.356-8.976-349.871-23.48c-44.765-7.254-80.94-15.884-105.901-25.447-12.486-4.783-22.113-9.78-28.602-14.919C4.122 90.504.917 85.334.917 80.208s3.206-10.296 9.709-15.446c6.489-5.139 16.116-10.135 28.602-14.918C64.19 40.28 100.364 31.65 145.129 24.398 234.644 9.893 358.343.916 495 .916Z' /%3E%3C/svg%3E"
                         alt="HapaiAuto">
